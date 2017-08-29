@@ -1,0 +1,10 @@
+# We may keep the git repo for the generated site here
+/docs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build dir
+build/

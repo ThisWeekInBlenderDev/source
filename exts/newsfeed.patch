@@ -1,0 +1,14 @@
+--- a/exts/newsfeed.py	2014-08-26 06:52:46.000000000 +1000
++++ b/exts/newsfeed.py	2017-08-30 08:07:38.079131565 +1000
+@@ -26,8 +26,9 @@
+         output = []
+         entries = []
+         includefiles = []
+-        for entry in self.content:
+-            if not entry:
++
++        for entry in self.content or sorted(env.found_docs):
++            if not entry or entry == env.docname:
+                 continue
+             docname = docname_join(env.docname, entry)
+             if docname not in env.found_docs:
