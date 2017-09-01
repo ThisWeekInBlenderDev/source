@@ -1,5 +1,7 @@
 
-import sys, os
+import sys
+import os
+import ablog
 
 sys.path.insert(0, os.path.abspath(os.path.join('..', 'exts')))
 
@@ -8,6 +10,7 @@ extensions = [
     'youtube',
     'newsfeed',
 
+    'ablog',
     'sphinx.ext.extlinks',
 ]
 extlinks = {
@@ -21,6 +24,9 @@ extlinks = {
 source_suffix = '.rst'
 
 exclude_patterns = ['template.rst']
+
+templates_path = [ablog.get_html_templates_path()]
+
 master_doc = 'index'
 
 # General information about the project.
@@ -64,4 +70,3 @@ html_theme_path = [alabaster.get_path()]
 
 # for our own extensions!
 phabricator_base = 'http://developer.blender.org'
-
