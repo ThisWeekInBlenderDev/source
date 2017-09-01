@@ -8,15 +8,17 @@ sys.path.insert(0, os.path.abspath(os.path.join('..', 'exts')))
 extensions = [
     # general
     'youtube',
-    'newsfeed',
+    ## Remove if ablog is used.
+    # 'newsfeed',
+    'extlinks_plus',
 
     'ablog',
-    'sphinx.ext.extlinks',
 ]
-extlinks = {
-    'task': ('http://developer.blender.org/T%s', 'T'),
-    'rev': ('http://developer.blender.org/r%s', 'r'),
-    'diff': ('http://developer.blender.org/D%s', 'D'),
+extlinks_plus = {
+    'task': ('http://developer.blender.org/T%s', '%s: (%s)', 'T%s'),
+    'diff': ('http://developer.blender.org/D%s', '%s: (%s)', 'D%s'),
+    # Show 9 chars of revision (typically there is a B prefix, so 8 chars or SHA1).
+    'rev': ('http://developer.blender.org/r%s', '%s: (%s)', 'r%.9s'),
 }
 
 
@@ -66,7 +68,3 @@ html_theme_options = {
 import alabaster
 print(alabaster.__file__)
 html_theme_path = [alabaster.get_path()]
-
-
-# for our own extensions!
-phabricator_base = 'http://developer.blender.org'
