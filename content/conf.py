@@ -1,18 +1,14 @@
 
-import sys
-import os
-import ablog
+import sys, os
 
 sys.path.insert(0, os.path.abspath(os.path.join('..', 'exts')))
 
 extensions = [
     # general
     'youtube',
-    ## Remove if ablog is used.
-    # 'newsfeed',
-    'extlinks_plus',
+    'newsfeed',
 
-    'ablog',
+    'extlinks_plus',
 ]
 extlinks_plus = {
     'task': ('http://developer.blender.org/T%s', '%s: (%s)', 'T%s'),
@@ -26,9 +22,6 @@ extlinks_plus = {
 source_suffix = '.rst'
 
 exclude_patterns = ['template.rst']
-
-templates_path = [ablog.get_html_templates_path()]
-
 master_doc = 'index'
 
 # General information about the project.
