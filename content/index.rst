@@ -15,4 +15,4 @@ Weeks
 .. toctree::
    :maxdepth: 1
 
-   YYYY-MM-DD.rst
+   2017-08-31
