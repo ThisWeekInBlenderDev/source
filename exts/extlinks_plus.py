@@ -1,10 +1,39 @@
 # -*- coding: utf-8 -*-
 """
     extlinks_plus
-    ~~~~~~~~
+    ~~~~~~~~~~~~~
 
-    Extension to save typing and prevent hard-coding of base URLs in the reST
-    files.
+    This is a version of extlinks that supports more advanced formatting:
+
+    Take the following example configuration::
+
+       extlinks_plus = {
+           'task': ('http://developer.blender.org/T%s', '%s: (%s)', 'T%s'),
+           'rev': ('http://developer.blender.org/r%s', '%s: (%s)', 'r%.8s'),
+       }
+
+    This supports showing the link in the title,
+    so a link to a task can for example be::
+
+         :task:`Some Task <123>`
+
+    Which can display as::
+
+         Some Task: (123)
+
+    It can also re-format the link so long SHA1's can be abbreviated::
+
+        :rev:`My Commit <39f8b245d47be42698442d679eca6ddd45add4e9>`
+
+    Can display as::
+
+         My Commit: (r39f8b245d)
+
+    Including the title in the body is optional,
+    this is also supported::
+
+        Some Task :task:`123`
+
 
     This adds a new config value called ``extlinks_plus`` that is created like this::
 
@@ -19,14 +48,8 @@
       with the revision using ``title_fmt``.
     - The revision will be formatted with ``rev_fmt`` typically used to
       abbreviate long SHA1's.
-
-    You can also give an explicit caption, e.g. :exmpl:`Foo <foo>`.
-
-    :copyright: Copyright 2007-2017 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
 """
 
-# Works similar 
 from six import iteritems
 from docutils.nodes import reference
 from docutils.utils import unescape
