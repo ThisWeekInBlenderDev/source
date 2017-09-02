@@ -13,17 +13,15 @@ Changes to Blender
 
 Example:
 
-- Cycles: Implement texture size limit simplify option
-  :rev:`B272412f9c0d26f630c5e1e7d07d4ff417b7218e5`
+- :rev:`Cycles: Implement texture size limit simplify option <B272412f9c0d26f630c5e1e7d07d4ff417b7218e5>`
 
 New Patches
 ===========
 
-- Mirror Modifier: Add just offsets for mirrored UVs
-  :diff:`2801`
+- :diff:`Mirror Modifier: Add just offsets for mirrored UVs <2801>`
 
 Other Projects
 ==============
 
-- Some interesting task
-  :task:`4000`
+- :task:`Some interesting task <4000>`
+
