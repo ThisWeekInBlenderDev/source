@@ -1,10 +1,10 @@
 
 ***************
-Week 3000-01-01
+Week 2017-08-31
 ***************
 
 .. feed-entry::
-   :date: 3000-01-01
+   :date: 2017-08-31
    
 .. note:: This is a testpage!
 
@@ -24,4 +24,3 @@ Other Projects
 ==============
 
 - :task:`Some interesting task <4000>`
-
