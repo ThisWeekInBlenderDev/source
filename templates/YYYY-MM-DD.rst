@@ -6,6 +6,12 @@ Week 3000-01-01
 .. feed-entry::
    :date: 3000-01-01
 
+A couple sentence discription of the week.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Aliquam bibendum varius sapien, vitae eleifend nisl molestie eget.
+
+.. cut::
+
 Changes to Blender
 ==================
 

@@ -5,6 +5,12 @@ Week 2017-09-01
 
 .. feed-entry::
    :date: 2017-09-01
+
+A couple sentence discription of the week.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Aliquam bibendum varius sapien, vitae eleifend nisl molestie eget.
+
+.. cut::
    
 .. note:: This is a testpage!
 
