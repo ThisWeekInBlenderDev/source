@@ -1,0 +1,26 @@
+
+***************
+Week 2017-09-01
+***************
+
+.. feed-entry::
+   :date: 2017-09-01
+   
+.. note:: This is a testpage!
+
+Changes to Blender
+==================
+
+Example:
+
+- :rev:`Cycles: Implement texture size limit simplify option <B272412f9c0d26f630c5e1e7d07d4ff417b7218e5>`
+
+New Patches
+===========
+
+- :diff:`Mirror Modifier: Add just offsets for mirrored UVs <2801>`
+
+Other Projects
+==============
+
+- :task:`Some interesting task <4000>`
