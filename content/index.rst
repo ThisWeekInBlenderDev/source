@@ -14,5 +14,7 @@ Weeks
 
 .. toctree::
    :maxdepth: 1
+   :glob:
+   :reversed:
 
-   2017-08-31
+   /*
