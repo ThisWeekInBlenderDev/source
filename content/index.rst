@@ -2,7 +2,9 @@
   This Week in Blender
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-Work in progress!
+Stay up to date with Blender development.
+
+.. note:: This is a work in progress!
 
 
 Weeks
