@@ -1,0 +1,7 @@
+.feed-date {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 9ch;
+  overflow: hidden;
+  vertical-align: bottom;
+}

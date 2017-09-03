@@ -32,10 +32,16 @@ copyright = 'Creative Commons'
 html_title = 'This Week in Blender Development'
 html_short_title = 'This Week in Blender Dev'
 
+html_static_path = ["../theme"]
+
 # visual noise for my purpose
 html_show_copyright = False
 html_show_sphinx = False
 html_show_sourcelink = False
+
+
+def setup(app):
+    app.add_stylesheet("theme_overrides.css")
 
 '''
 try:
