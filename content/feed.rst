@@ -5,6 +5,10 @@
 
    The following feed globs all YY-MM-DD
 
+****
+Feed
+****
+
 .. feed::
    :rss: index.rss
    :title: This Week in Blender Development
