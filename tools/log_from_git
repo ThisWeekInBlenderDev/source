@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+import re
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'modules'))
+from git_log import GitCommit, GitCommitIter
+
+source_dir = sys.argv[-1]
+if not os.path.isdir(os.path.join(source_dir, '.git')):
+    print('Expected a single argument pointing to Blender\'s git dir')
+    sys.exit(1)
+
+
+def date_to_first_day_of_week(dt, first_day=1):
+    from datetime import timedelta
+    dt = dt - timedelta(days=(dt.weekday() + first_day) % 7)
+    return dt.replace(hour=0, minute=0, second=0)
+
+
+re_task = re.compile(r'\bT(\d+)\b')
+re_diff = re.compile(r'\bD(\d+)\b')
+
+
+def plain_text_to_rst(body):
+    body = re_task.sub(r':task:`\1`', body)
+    body = re_diff.sub(r':diff:`\1`', body)
+    return body
+
+
+def main():
+    from datetime import timedelta
+    import textwrap
+
+    weeks_written_max = 3
+    weeks_written = 0
+
+    week_start_prev = None
+    fh = None
+    # All commits from now into the past.
+    for c in GitCommitIter(source_dir, 'HEAD'):
+        week_start_date = date_to_first_day_of_week(c.date)
+        week_start = week_start_date.timetuple()
+        if week_start != week_start_prev:
+            if weeks_written == weeks_written_max:
+                break
+            weeks_written += 1
+            week_text = week_start_date.strftime('%Y-%m-%d')
+            if fh is not None:
+                fh.close()
+            fh = open(week_text + '.rst', 'w')
+            print('{}.rst ...'.format(week_text))
+            fw = fh.write
+
+            title = 'Week {}'.format(week_text)
+            fw(title + '\n')
+            fw(len(title) * '=' + '\n\n')
+            week_start_prev = week_start
+
+        subject = c.subject
+        body = c.body[len(subject):]
+        subject = plain_text_to_rst(subject)
+        body = plain_text_to_rst(body)
+        fw('- {} :rev:`B{}`\n\n'.format(subject.rstrip('.:'), c.sha1.decode('ASCII')))
+
+        body = body.strip('\n')
+        if body:
+            fw(textwrap.indent(body.strip('\n'), '  '))
+            fw('\n')
+
+        # only for context
+        fw('.. ' + c.author + '\n\n')
+
+
+if __name__ == '__main__':
+    main()
