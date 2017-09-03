@@ -4,10 +4,6 @@
 
 Work in progress!
 
-.. feed::
-   :rss: index.rss
-   :title: This Week in Blender Development
-
 
 Weeks
 -----
@@ -18,3 +14,11 @@ Weeks
    :reversed:
 
    /*
+
+.. newsfeed extension expands content, use hidden toctree.
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   feed
