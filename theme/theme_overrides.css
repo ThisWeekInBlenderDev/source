@@ -1,7 +1,13 @@
+/*Remove time from date because it is irrelevant for us*/
 .feed-date {
   display: inline-block;
   white-space: nowrap;
   max-width: 9ch;
   overflow: hidden;
   vertical-align: bottom;
+}
+
+/*Remove dotted line from links. We want a simple website*/
+a {
+  border-bottom: none !important;
 }
