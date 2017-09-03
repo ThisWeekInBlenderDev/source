@@ -6,7 +6,7 @@ BUILDDIR      = build
 
 all: FORCE
 	$(SPHINXBUILD) -b html $(SPHINXOPTS) ./content "$(BUILDDIR)/html"
-	- echo " xdg-open \"$(BUILDDIR)/html/index.html\""
+	@echo " xdg-open \"$(BUILDDIR)/html/index.html\""
 
 clean: FORCE
 	rm -rf "$(BUILDDIR)/html" "$(BUILDDIR)/latex"
