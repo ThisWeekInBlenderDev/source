@@ -1,13 +1,32 @@
---- a/exts/newsfeed.py	2014-08-26 06:52:46.000000000 +1000
-+++ b/exts/newsfeed.py	2017-08-30 08:07:38.079131565 +1000
-@@ -26,8 +26,9 @@
+diff --git a/d/sphinxcontrib-newsfeed-0.1.4/sphinxcontrib/newsfeed.py b/exts/newsfeed.py
+index 57b0451..62c2345 100644
+--- a/d/sphinxcontrib-newsfeed-0.1.4/sphinxcontrib/newsfeed.py
++++ b/exts/newsfeed.py
+@@ -26,8 +26,26 @@ class FeedDirective(Directive):
          output = []
          entries = []
          includefiles = []
 -        for entry in self.content:
 -            if not entry:
 +
-+        for entry in self.content or sorted(env.found_docs):
++        def expand_content(content):
++            ''' Support globbing, so we don't need to enumerate each page.
++            '''
++            import fnmatch, re
++            docs = None
++            for entry in content:
++                if "*" in entry:
++                    if docs is None:
++                        docs = sorted(env.found_docs)
++                    re_comp = re.compile(fnmatch.translate(entry))
++                    # reversed since this is a newsfeed!
++                    for e in reversed(docs):
++                        if re_comp.match(e):
++                            yield e
++                else:
++                    yield entry
++
++        for entry in expand_content(self.content):
 +            if not entry or entry == env.docname:
                  continue
              docname = docname_join(env.docname, entry)

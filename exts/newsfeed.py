@@ -27,7 +27,24 @@ class FeedDirective(Directive):
         entries = []
         includefiles = []
 
-        for entry in self.content or sorted(env.found_docs):
+        def expand_content(content):
+            ''' Support globbing, so we don't need to enumerate each page.
+            '''
+            import fnmatch, re
+            docs = None
+            for entry in content:
+                if "*" in entry:
+                    if docs is None:
+                        docs = sorted(env.found_docs)
+                    re_comp = re.compile(fnmatch.translate(entry))
+                    # reversed since this is a newsfeed!
+                    for e in reversed(docs):
+                        if re_comp.match(e):
+                            yield e
+                else:
+                    yield entry
+
+        for entry in expand_content(self.content):
             if not entry or entry == env.docname:
                 continue
             docname = docname_join(env.docname, entry)
@@ -356,3 +373,5 @@ def setup(app):
                  latex=(visit_skip, None),
                  text=(visit_skip, None))
     app.connect(str('doctree-resolved'), process_feed)
+
+
