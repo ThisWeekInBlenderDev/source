@@ -7,8 +7,9 @@ extensions = [
     # general
     'youtube',
     'newsfeed',
-
     'extlinks_plus',
+    # sphinx extensions
+    'sphinx.ext.githubpages',
 ]
 extlinks_plus = {
     'task': ('http://developer.blender.org/T%s', '%s: (%s)', 'T%s'),
