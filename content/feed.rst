@@ -10,7 +10,7 @@ Feed
 ****
 
 .. feed::
-   :rss: index.rss
+   :rss: rss.xml
    :title: This Week in Blender Development
 
    *-*-*
