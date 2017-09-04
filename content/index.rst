@@ -1,6 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%
-  This Week in Blender
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  This Week in Blender Development
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Stay up to date with Blender development.
 
