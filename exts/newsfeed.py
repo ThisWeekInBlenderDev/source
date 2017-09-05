@@ -292,7 +292,7 @@ def process_feed(app, doctree, fromdocname):
         node.replace_self(replacement)
         if app.builder.format == 'html':
             rss_feed = RSSFeed(rss_title, rss_link, rss_description,
-                               rss_date, rss_items)
+                               rss_date, rss_items, rss_filename)
             if rss_filename:
                 rss_path = os.path.join(app.builder.outdir, rss_filename)
                 rss_stream = open(rss_path, 'wb')
@@ -301,7 +301,7 @@ def process_feed(app, doctree, fromdocname):
 
 
 RSSFeed = collections.namedtuple('RSSFeed',
-        ['title', 'link', 'description', 'date', 'items'])
+        ['title', 'link', 'description', 'date', 'items', 'relpath'])
 RSSItem = collections.namedtuple('RSSItem',
         ['title', 'link', 'description', 'date'])
 
@@ -322,10 +322,12 @@ def format_date(date):
 def write_rss(rss_feed, stream):
     lines = []
     lines.append('''<?xml version="1.0" encoding="utf-8"?>\n''')
-    lines.append('''<rss version="2.0">\n''')
+    lines.append('''<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n''')
     lines.append('''  <channel>\n''')
     lines.append('''    <title>%s</title>\n'''
             % format_text(rss_feed.title))
+    lines.append('''    <atom:link href="%s" rel="self" type="application/rss+xml" />\n'''
+            % format_text(os.path.join(rss_feed.link, "/".join(rss_feed.relpath.split(os.sep)))))
     lines.append('''    <link>%s</link>\n'''
             % format_text(rss_feed.link))
     lines.append('''    <description>%s</description>\n'''
