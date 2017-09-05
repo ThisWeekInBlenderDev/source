@@ -19,6 +19,8 @@ Working
 Open Topics
 ===========
 
+- Who is the target audience?
+  *Suggest developers and technical users, people who don't read commit logs but like to run daily builds.*
 - Policy for who contributes?
   *(suggest all Blender devs get automatic access, otherwise handle on case by case basis).*
 - Policy for what is an interesting commit?
