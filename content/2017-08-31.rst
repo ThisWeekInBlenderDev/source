@@ -10,8 +10,6 @@ A couple sentence discription of the week.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam bibendum varius sapien, vitae eleifend nisl molestie eget.
 
-.. cut::
-
 .. note:: This is a testpage!
 
 Changes to Blender
