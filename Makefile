@@ -11,8 +11,20 @@ all: FORCE
 clean: FORCE
 	rm -rf "$(BUILDDIR)/html" "$(BUILDDIR)/latex"
 
-# TODO, different target!
 upload: all FORCE
-	rsync --progress -ave "ssh -p 22" $(BUILDDIR)/html/* ideasman42@download.blender.org:/data/ftp/ideasman42/donelist
+	if [ -d "docs/.git" ]; then \
+		rsync \
+			-av \
+			--exclude=".doctrees" \
+			--filter='protect .git' \
+			--delete \
+			--delete-excluded \
+			--prune-empty-dirs \
+			./build/html/ ./docs/ ; \
+		cd docs ; \
+		git add -A ; \
+		git ci -m "$$(date '+%Y-%m-%d %H:%M:%S')" ; \
+		git push --force; \
+	fi \
 
 FORCE:
