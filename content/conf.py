@@ -82,6 +82,7 @@ if sphinx_rtd_theme:
 html_theme = 'alabaster'
 html_theme_options = {
     "show_powered_by": False,
+    "analytics_id": "UA-105840115-1"
 }
 import alabaster
 print(alabaster.__file__)
