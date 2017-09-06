@@ -39,7 +39,7 @@ rst_epilog = """
 |vertical_separator|
 :doc:`all weeks <feed>`
 |vertical_separator|
-`source <https://github.com/Blendify/this-week-in-blender-dev>`__
+`source code <https://github.com/ThisWeekInBlenderDev/source>`__
 |vertical_separator|
 `cc-by-sa 4.0 <https://creativecommons.org/licenses/by-sa/4.0>`__
 """
