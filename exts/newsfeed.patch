@@ -1,37 +1,51 @@
 diff --git a/d/sphinxcontrib-newsfeed-0.1.4/sphinxcontrib/newsfeed.py b/exts/newsfeed.py
-index 57b0451..9873372 100644
+index 57b0451..a1e3f08 100644
 --- a/d/sphinxcontrib-newsfeed-0.1.4/sphinxcontrib/newsfeed.py
 +++ b/exts/newsfeed.py
-@@ -26,8 +26,26 @@ class FeedDirective(Directive):
+@@ -19,14 +19,41 @@ class FeedDirective(Directive):
+             'title': directives.unchanged,
+             'link': directives.unchanged,
+             'description': directives.unchanged,
++            'glob': directives.flag,
+     }
+ 
++    @staticmethod
++    def _glob_content(env, content):
++        ''' Support globbing, so we don't need to enumerate each page.
++        '''
++        import fnmatch, re
++        docs = None
++        for entry in content:
++            if "*" in entry:
++                # reverse since this is a newsfeed!
++                if docs is None:
++                    docs = sorted(env.found_docs, reverse=True)
++                re_comp = re.compile(fnmatch.translate(entry))
++                for entry_test in docs:
++                    if re_comp.match(entry_test):
++                        yield entry_test
++            else:
++                yield entry
++
++
+     def run(self):
+         env = self.state.document.settings.env
          output = []
          entries = []
          includefiles = []
 -        for entry in self.content:
--            if not entry:
++        glob = 'glob' in self.options
 +
-+        def expand_content(content):
-+            ''' Support globbing, so we don't need to enumerate each page.
-+            '''
-+            import fnmatch, re
-+            docs = None
-+            for entry in content:
-+                if "*" in entry:
-+                    if docs is None:
-+                        docs = sorted(env.found_docs)
-+                    re_comp = re.compile(fnmatch.translate(entry))
-+                    # reversed since this is a newsfeed!
-+                    for e in reversed(docs):
-+                        if re_comp.match(e):
-+                            yield e
-+                else:
-+                    yield entry
++        if glob:
++            content_iter = self._glob_content(env, self.content)
++        else:
++            content_iter = self.content
 +
-+        for entry in expand_content(self.content):
-+            if not entry or entry == env.docname:
++        for entry in content_iter:
+             if not entry:
                  continue
              docname = docname_join(env.docname, entry)
-             if docname not in env.found_docs:
-@@ -274,7 +292,7 @@ def process_feed(app, doctree, fromdocname):
+@@ -274,7 +301,7 @@ def process_feed(app, doctree, fromdocname):
          node.replace_self(replacement)
          if app.builder.format == 'html':
              rss_feed = RSSFeed(rss_title, rss_link, rss_description,
@@ -40,7 +54,7 @@ index 57b0451..9873372 100644
              if rss_filename:
                  rss_path = os.path.join(app.builder.outdir, rss_filename)
                  rss_stream = open(rss_path, 'wb')
-@@ -283,7 +301,7 @@ def process_feed(app, doctree, fromdocname):
+@@ -283,7 +310,7 @@ def process_feed(app, doctree, fromdocname):
  
  
  RSSFeed = collections.namedtuple('RSSFeed',
@@ -49,7 +63,7 @@ index 57b0451..9873372 100644
  RSSItem = collections.namedtuple('RSSItem',
          ['title', 'link', 'description', 'date'])
  
-@@ -304,10 +322,12 @@ def format_date(date):
+@@ -304,10 +331,12 @@ def format_date(date):
  def write_rss(rss_feed, stream):
      lines = []
      lines.append('''<?xml version="1.0" encoding="utf-8"?>\n''')

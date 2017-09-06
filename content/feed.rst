@@ -13,5 +13,6 @@ Feed
    :rss: rss.xml
    :title: This Week in Blender Development
    :link: https://thisweekinblenderdev.github.io/news/
+   :glob:
 
    *-*-*

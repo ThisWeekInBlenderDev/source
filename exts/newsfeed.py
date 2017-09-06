@@ -19,33 +19,42 @@ class FeedDirective(Directive):
             'title': directives.unchanged,
             'link': directives.unchanged,
             'description': directives.unchanged,
+            'glob': directives.flag,
     }
+
+    @staticmethod
+    def _glob_content(env, content):
+        ''' Support globbing, so we don't need to enumerate each page.
+        '''
+        import fnmatch, re
+        docs = None
+        for entry in content:
+            if "*" in entry:
+                # reverse since this is a newsfeed!
+                if docs is None:
+                    docs = sorted(env.found_docs, reverse=True)
+                re_comp = re.compile(fnmatch.translate(entry))
+                for entry_test in docs:
+                    if re_comp.match(entry_test):
+                        yield entry_test
+            else:
+                yield entry
+
 
     def run(self):
         env = self.state.document.settings.env
         output = []
         entries = []
         includefiles = []
+        glob = 'glob' in self.options
 
-        def expand_content(content):
-            ''' Support globbing, so we don't need to enumerate each page.
-            '''
-            import fnmatch, re
-            docs = None
-            for entry in content:
-                if "*" in entry:
-                    if docs is None:
-                        docs = sorted(env.found_docs)
-                    re_comp = re.compile(fnmatch.translate(entry))
-                    # reversed since this is a newsfeed!
-                    for e in reversed(docs):
-                        if re_comp.match(e):
-                            yield e
-                else:
-                    yield entry
+        if glob:
+            content_iter = self._glob_content(env, self.content)
+        else:
+            content_iter = self.content
 
-        for entry in expand_content(self.content):
-            if not entry or entry == env.docname:
+        for entry in content_iter:
+            if not entry:
                 continue
             docname = docname_join(env.docname, entry)
             if docname not in env.found_docs:
