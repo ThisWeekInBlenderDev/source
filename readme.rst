@@ -54,9 +54,10 @@ Building Online Docs
 ====================
 
 You will need to have the site's
-`git-pages repository <https://github.com/ThisWeekInBlenderDev/news>`__ checked out just once::
+`git-pages repository <https://github.com/ThisWeekInBlenderDev/ThisWeekInBlenderDev.github.io>`__
+checked out just once::
 
-   git clone git@github.com:ThisWeekInBlenderDev.github.io.git docs
+   git clone git@github.com:ThisWeekInBlenderDev/ThisWeekInBlenderDev.github.io.git docs
 
 Then updates can be made by running::
 
