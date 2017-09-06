@@ -30,6 +30,20 @@ Open Topics
   (see `Awesome Sphinx Themes <https://github.com/yoloseem/awesome-sphinxdoc#themes>`__)
 
 
+Contents
+========
+
+- Commit log.
+- New diff's.
+- New tasks.
+
+Maybe...
+
+- Add-ons repository?
+- Add-ons from 3rd party repos?
+- Development in feature branches?
+
+
 To Do
 =====
 
