@@ -166,15 +166,17 @@ class GitCommitIter:
     __slots__ = (
         "_path",
         "_git_dir",
+        "_git_extra_args",
         "_sha1_range",
         "_process",
     )
 
-    def __init__(self, path, sha1_range):
+    def __init__(self, path, sha1_range, extra_args=()):
         self._path = path
         self._git_dir = os.path.join(path, ".git")
         self._sha1_range = sha1_range
         self._process = None
+        self._git_extra_args = extra_args
 
     def __iter__(self):
         cmd = (
@@ -184,6 +186,7 @@ class GitCommitIter:
             "log",
             self._sha1_range,
             "--format=%H",
+            *self._git_extra_args,
         )
         # print(" ".join(cmd))
 
