@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Generate RST formatted log that can be used as input for the final report.
+
 Run the command with Blender's git path as an argument:
 
    log_from_git --source /path/to/blender
@@ -66,7 +68,7 @@ def argparse_create():
     # When --help or no args are given, print this help
     epilog = 'This script is typically used to help write release notes or weekly reports.'
 
-    parser = argparse.ArgumentParser(description=usage_text, epilog=epilog)
+    parser = argparse.ArgumentParser(description=__doc__, epilog=epilog)
 
     parser.add_argument(
         '--source', dest='source_dir',
@@ -149,7 +151,7 @@ def rst_write_log_by_weeks(
 def main():
     args = argparse_create().parse_args()
 
-    # reverse so we get oldest to newest
+    # Exclude merge commits: https://stackoverflow.com/a/8527200/432509
     extra_args = ('--no-merges', '--first-parent')
 
     if args.author:
