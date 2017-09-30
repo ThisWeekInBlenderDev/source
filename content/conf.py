@@ -54,7 +54,6 @@ rst_epilog = """
 html_title = 'This Week in Blender Development'
 html_short_title = 'This Week in Blender Dev'
 
-html_favicon = "../theme/favicon.ico"
 html_static_path = ["../theme"]
 
 # visual noise for my purpose
