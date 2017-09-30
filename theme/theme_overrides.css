@@ -1,3 +1,12 @@
+/* Start remove giant gap on bottom of pages*/
+body {
+  padding-bottom: 0;
+}
+.navbar {
+  margin-bottom: 0;
+}
+/*End remove giant gap on bottom of pages*/
+
 /*Remove time from date because it is irrelevant for us*/
 .feed-date {
   display: inline-block;
