@@ -8,11 +8,13 @@ extensions = [
     'youtube',
     'newsfeed',
     'extlinks_plus',
+    'googleanalytics'
     # sphinx extensions
     'sphinx.ext.githubpages',
     # installed with pip
     'sphinxjp.themes.basicstrap',
 ]
+
 extlinks_plus = {
     'task': ('http://developer.blender.org/T%s', '%s: (%s)', 'T%s'),
     'diff': ('http://developer.blender.org/D%s', '%s: (%s)', 'D%s'),
@@ -20,6 +22,8 @@ extlinks_plus = {
     'rev': ('http://developer.blender.org/r%s', '%s: (%s)', 'r%.9s'),
 }
 
+googleanalytics_enabled = True
+googleanalytics_id = 'UA-105840115-1'
 
 # The suffix of source filenames.
 source_suffix = '.rst'
