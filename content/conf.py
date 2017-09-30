@@ -50,8 +50,6 @@ rst_epilog = """
 html_title = 'This Week in Blender Development'
 html_short_title = 'This Week in Blender Dev'
 
-# Socket logo from: https://www.blender.org/about/logo
-html_logo = "../theme/blender-logo.svg"
 html_favicon = "../theme/favicon.ico"
 html_static_path = ["../theme"]
 
