@@ -8,7 +8,7 @@ extensions = [
     'youtube',
     'newsfeed',
     'extlinks_plus',
-    'googleanalytics'
+    'googleanalytics',
     # sphinx extensions
     'sphinx.ext.githubpages',
     # installed with pip
