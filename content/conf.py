@@ -58,6 +58,7 @@ html_static_path = ["../theme"]
 # visual noise for my purpose
 html_show_copyright = False
 html_show_sphinx = False
+html_copy_source = False
 html_show_sourcelink = False
 
 
