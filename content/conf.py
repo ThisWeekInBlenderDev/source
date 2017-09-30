@@ -10,6 +10,8 @@ extensions = [
     'extlinks_plus',
     # sphinx extensions
     'sphinx.ext.githubpages',
+    # installed with pip
+    'sphinxjp.themes.basicstrap',
 ]
 extlinks_plus = {
     'task': ('http://developer.blender.org/T%s', '%s: (%s)', 'T%s'),
@@ -62,28 +64,10 @@ html_show_sourcelink = False
 def setup(app):
     app.add_stylesheet("theme_overrides.css")
 
-'''
-try:
-    import sphinx_rtd_theme
-except ImportError:
-    sphinx_rtd_theme = None
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-if sphinx_rtd_theme:
-    html_theme = 'sphinx_rtd_theme'
-else:
-    html_theme = 'haiku'
-
-if sphinx_rtd_theme:
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-'''
-
-html_theme = 'alabaster'
+html_theme = 'basicstrap'
 html_theme_options = {
-    "show_powered_by": False,
-    "analytics_id": "UA-105840115-1"
+    'header_inverse': False,
+    'relbar_inverse': False,
+    'inner_theme': True,
+    'inner_theme_name': 'bootswatch-flatly',
 }
-import alabaster
-print(alabaster.__file__)
-html_theme_path = [alabaster.get_path()]

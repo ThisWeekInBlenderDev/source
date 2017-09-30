@@ -1,13 +1,3 @@
-/*Remove dotted line from links. We want a simple website*/
-a {
-  border-bottom: none !important;
-}
-
-/*Make search go button on same line as search bar*/
-.search {
-  display: flex;
-}
-
 /*Remove time from date because it is irrelevant for us*/
 .feed-date {
   display: inline-block;
