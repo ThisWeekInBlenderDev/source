@@ -2,13 +2,10 @@
   This Week in Blender Development
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Stay up to date with Blender development.
-
-.. note:: This is a work in progress!
-
+Stay up to date with `Blender <https://www.blender.org/>` development.
 
 Weeks
------
+=====
 
 .. toctree::
    :maxdepth: 1
