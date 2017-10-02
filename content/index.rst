@@ -2,7 +2,7 @@
   This Week in Blender Development
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Stay up to date with `Blender <https://www.blender.org/>` development.
+Stay up to date with `Blender <https://www.blender.org/>`__ development.
 
 Weeks
 =====
