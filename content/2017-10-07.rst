@@ -1,0 +1,41 @@
+
+***************
+Week 2017-10-07
+***************
+
+.. feed-entry::
+   :date: 2017-10-07
+
+Hello an welcome the the first issue of This Week in Blender Delopment.
+The goal of the project is to allow users to easily see what has happened
+in development over the past week. This is not a list of everything, however,
+it is a decent list of only the stuff most interesting to end users.
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Support CUDA 9 toolkit, and automatically disable sm_2x binaries
+  :rev:`Bf55735e533601b559d53fd1e2c5297092e844345`
+
+.. rubric:: greasepencil-object
+
+- Add curve options to Thick modifier
+  :rev:`Bef4c69a71594ceb42aac8e4d4cd0ed0523adb34f`
+
+New Patches
+===========
+
+- Cycles: schedule more work and prevent CUDA driver timeouts.
+  :diff:`2862`
+- Sculpting: Add pressure curvemapping
+  :diff:`2863`
+
+Other Projects
+==============
+
+Example:
+
+- Some interesting task
+  :task:`4000`
