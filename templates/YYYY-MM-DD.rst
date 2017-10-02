@@ -6,7 +6,7 @@ Week 3000-01-01
 .. feed-entry::
    :date: 3000-01-01
 
-Hello andd welcome to another issue of *This Week in Blender Delopment*!
+Hello and welcome to another issue of *This Week in Blender Delopment*!
 `Blender <https://www.blender.org/>`__ is the free and opensource 3D creation
 suite for the next generation of artist. Follow the developmment on Twitter
 `@BlenderDev <https://twitter.com/BlenderDev>`__.
