@@ -47,3 +47,5 @@ Example:
 
 - Some interesting task
   :task:`4000`
+
+.. cut::
