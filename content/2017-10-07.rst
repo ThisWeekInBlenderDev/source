@@ -6,11 +6,18 @@ Week 2017-10-07
 .. feed-entry::
    :date: 2017-10-07
 
-Hello an welcome the the first issue of This Week in Blender Delopment.
+Hello and welcome the the first issue of This Week in Blender Delopment.
 The goal of the project is to allow users to easily see what has happened
 in development over the past week. This is not a list of everything, however,
 it is a decent list of only the stuff most interesting to end users.
-Follow the developmment on Twitter `@BlenderDev <https://twitter.com/BlenderDev>`
+`Blender <https://www.blender.org/>`__ is the free and opensource 3D creation
+suite for the next generation of artist. Follow the developmment on Twitter
+`@BlenderDev <https://twitter.com/BlenderDev>`__.
+
+*This Week in Blender Delopment* is openly developed on
+`Github <https://github.com/ThisWeekInBlenderDev>`__
+so please report any recommendations, bugs, or PRs there.
+
 
 Changes to Blender
 ==================
