@@ -23,7 +23,7 @@ upload: all FORCE
 			./build/html/ ./docs/ ; \
 		cd docs ; \
 		git add -A ; \
-		git ci -m "$$(date '+%Y-%m-%d %H:%M:%S')" ; \
+		git commit -m "$$(date '+%Y-%m-%d %H:%M:%S')" ; \
 		git push --force; \
 	fi \
 
