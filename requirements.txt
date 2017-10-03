@@ -1,2 +1,2 @@
 sphinx==1.6.4
-git+git://github.com/blendify/sphinxjp.themes.basicstrap.git@8174b25e9044d27dfa397c7a63bed08fbbf649cb
+git+git://github.com/blendify/sphinxjp.themes.basicstrap.git@b1b6b0f0aa419d3713945c23835ab2539ca118cb
