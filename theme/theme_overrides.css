@@ -16,12 +16,3 @@ a {
 .navbar {
   border-radius: 0;
 }
-
-/*Remove time from date because it is irrelevant for us*/
-.feed-date {
-  display: inline-block;
-  white-space: nowrap;
-  max-width: 9ch;
-  overflow: hidden;
-  vertical-align: bottom;
-}

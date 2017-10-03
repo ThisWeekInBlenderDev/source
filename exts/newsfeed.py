@@ -97,7 +97,7 @@ class FeedEntryDirective(Directive):
     def run(self):
         author = self.options.get('author')
         date = self.options.get('date')
-        for format in ["%Y-%m-%d", "%Y-%m-%d %H:%M", "%Y-%m-%d %H:%M:%S"]:
+        for format in ["%Y-%m-%d"]:
             try:
                 date = datetime.datetime.strptime(date, format)
             except ValueError:
@@ -384,5 +384,3 @@ def setup(app):
                  latex=(visit_skip, None),
                  text=(visit_skip, None))
     app.connect(str('doctree-resolved'), process_feed)
-
-
