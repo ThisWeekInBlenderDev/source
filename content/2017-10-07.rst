@@ -22,6 +22,8 @@ so please report any recommendations, bugs, or PRs there.
 Changes to Blender
 ==================
 
+.. SHA1 range: 88a08ef8ad41..21369429168
+
 .. rubric:: master
 
 - Support CUDA 9 toolkit, and automatically disable sm_2x binaries
