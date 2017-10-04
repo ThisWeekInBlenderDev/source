@@ -1,4 +1,3 @@
-.. SHA1 range: 88a08ef8ad41..39e60c30675
 
 ***************
 Week 2017-10-07
@@ -19,6 +18,7 @@ suite for the next generation of artist. Follow the developmment on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
+.. SHA1 range: 88a08ef8ad41..39e60c30675
 
 Changes to Blender
 ==================
