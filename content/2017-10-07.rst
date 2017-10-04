@@ -26,11 +26,11 @@ Changes to Blender
 
 .. rubric:: master
 
-- Support CUDA 9 toolkit, and automatically disable sm_2x binaries
+- Support CUDA 9 toolkit, and automatically disable ``sm_2x`` binaries
   :rev:`Bf55735e533601b559d53fd1e2c5297092e844345`
-- Vertex Paint: projection options
+- Vertex Paint: Add projection options (matching projection painting)
   :rev:`Bb2a10fa615efcf403a9ca23005d86ca149ebf56b`
-- Disable multithreaded weight paint when mirroring is enabled.
+- Disable multi-threaded weight paint when mirroring is enabled.
   :rev:`B88dd45e1e1bde5db43e8807b7def754dea8b01fc`
 
 .. rubric:: blender2.8
@@ -50,8 +50,6 @@ New Patches
 
 - Cycles: schedule more work and prevent CUDA driver timeouts.
   :diff:`2862`
-- Compile fixes for MSVC: missing include for uint typedef/macro syntax error
-  :diff:`2863`
 - Sculpting: Add pressure curvemapping
   :diff:`2864`
 - UV select overlapping
