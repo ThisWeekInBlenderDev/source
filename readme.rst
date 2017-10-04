@@ -14,6 +14,20 @@ Working
 - ``rev``, ``task``, ``diff`` roles *(only for Sphinx builds, not online preview)*.
 - RSS feed via the ``newsfeed`` extension *(patched to include all weeks without explicitly listing).*
 - Hosting on github pages for now *(can easily change)*.
+- Theme ``basicstrap`` with customization's is working nicely.
+
+
+Guidelines for Inclusion
+========================
+
+- Only include Commits/Diffs/Tasks if they include a change users might notice.
+  (that includes internal changes such as optimizations or improvements to algorithms).
+- Don't include changes to infrastructure (build-system, build-bot, translation tools or code-cleanups).
+- Very minor changes (typo's in text or minor changes to comments or wording can also be left out).
+
+Rule of Thumb
+   if you wouldn't tap someone on the shoulder and tell them about this new and interesting change,
+   leave it out :) - *assuming that someone is interested in Blender-Dev of course!*
 
 
 Open Topics
@@ -23,11 +37,7 @@ Open Topics
   *Suggest developers and technical users, people who don't read commit logs but like to run daily builds.*
 - Policy for who contributes?
   *(suggest all Blender devs get automatic access, otherwise handle on case by case basis).*
-- Policy for what is an interesting commit?
-  *(lets see if we need one)*.
 - Should this use a mailing list?
-- What theme to use, currently using ``alabaster``, could change later
-  (see `Awesome Sphinx Themes <https://github.com/yoloseem/awesome-sphinxdoc#themes>`__)
 
 
 Contents
