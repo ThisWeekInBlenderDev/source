@@ -29,13 +29,13 @@ Changes to Blender
   :rev:`Bf55735e533601b559d53fd1e2c5297092e844345`
 - Vertex Paint: Add projection options (matching projection painting)
   :rev:`Bb2a10fa615efcf403a9ca23005d86ca149ebf56b`
-- Disable multi-threaded weight paint when mirroring is enabled.
+- Weight Paint: disable multi-threaded weight paint when mirroring is enabled.
   :rev:`B88dd45e1e1bde5db43e8807b7def754dea8b01fc`
 - Weight Paint: add some color blending modes 
   :rev:`B6092ded1279e048709fa0481a5dd314ea9712eea`
-- Vertex Paint: remove accumulate (soc-2017-vertex_paint)
+- Vertex Paint: expose old *Spray* option as *Accumulate* (matching sculpt mode)
   :rev:`Bf4b1f9b9255cda1af5e093f25cdde816bd94d8cd`
-- Weight Paint: blend smear tool
+- Weight Paint: use brush falloff to blend results of the smear tool
   :rev:`Ba4721c05040fce606d6c6ccc4ea91bdf6c8846e8`
 - Python: bump minimum version to 3.6
   :rev:`Bcbe07d980ccc860cb01549272fc95c08912581d7`
