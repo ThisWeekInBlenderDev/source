@@ -16,7 +16,7 @@ This is not a list of everything, our aim s to list changes of interest to end u
 Follow the development on Twitter
 `@BlenderDev <https://twitter.com/BlenderDev>`__.
 
-*This Week in Blender Delopment* is openly developed on
+*This Week in Blender Development* is openly developed on
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
@@ -51,10 +51,10 @@ Changes to Blender
 
 - Add curve options to Thick modifier
   :rev:`Bef4c69a71594ceb42aac8e4d4cd0ed0523adb34f`
-- Add Antialiasing to Grease Pencil
-  :rev:`B90152f6bcb05ba0410c18e05edec7ba8db640784`
-- Remove antialiasing code
-  :rev:`B0e99d51a385db0b8be8f470e391da26deae8db91`
+- Add new color pallet system
+  :rev:`B7c9467ae1fd0bfcf97dd5411fee0be60becb7325`
+- Add a work in progress implmentation of FXAA
+  :rev:`Bcf87d5759bd1ffc87c0ca2128db3425f9062c8e6`
 
 .. rubric:: fluid-mantaflow
 
@@ -68,7 +68,7 @@ New Patches
 
 - Cycles: schedule more work and prevent CUDA driver timeouts.
   :diff:`2862`
-- Sculpting: Add pressure curvemapping
+- Sculpting: Add pressure curve-mapping
   :diff:`2864`
 - UV select overlapping
   :diff:`2865`
