@@ -1,3 +1,4 @@
+.. SHA1 range: 88a08ef8ad41..39e60c30675
 
 ***************
 Week 2017-10-07
@@ -22,8 +23,6 @@ so please report any recommendations, bugs, or PRs there.
 Changes to Blender
 ==================
 
-.. SHA1 range: 88a08ef8ad41..21369429168
-
 .. rubric:: master
 
 - Support CUDA 9 toolkit, and automatically disable ``sm_2x`` binaries
@@ -32,6 +31,14 @@ Changes to Blender
   :rev:`Bb2a10fa615efcf403a9ca23005d86ca149ebf56b`
 - Disable multi-threaded weight paint when mirroring is enabled.
   :rev:`B88dd45e1e1bde5db43e8807b7def754dea8b01fc`
+- Weight Paint: add some color blending modes 
+  :rev:`B6092ded1279e048709fa0481a5dd314ea9712eea`
+- Vertex Paint: remove accumulate (soc-2017-vertex_paint)
+  :rev:`Bf4b1f9b9255cda1af5e093f25cdde816bd94d8cd`
+- Weight Paint: blend smear tool
+  :rev:`Ba4721c05040fce606d6c6ccc4ea91bdf6c8846e8`
+- Python: bump minimum version to 3.6
+  :rev:`Bcbe07d980ccc860cb01549272fc95c08912581d7`
 
 .. rubric:: blender2.8
 
@@ -44,6 +51,15 @@ Changes to Blender
   :rev:`Bef4c69a71594ceb42aac8e4d4cd0ed0523adb34f`
 - Add Antialiasing to Grease Pencil
   :rev:`B90152f6bcb05ba0410c18e05edec7ba8db640784`
+- Remove antialiasing code
+  :rev:`B0e99d51a385db0b8be8f470e391da26deae8db91`
+
+.. rubric:: fluid-mantaflow
+
+- Fluid particles: UI update
+  :rev:`B949316d0a79373413adaaff041da6661611515ff`
+- Big fluid particles update
+  :rev:`Bc1fb55b44b6c99248d38a7578e92ea79d95fae36`
 
 New Patches
 ===========
@@ -58,9 +74,4 @@ New Patches
 Other Projects
 ==============
 
-There have been no interesting tasks this week.
-
-.. Example:
-.. 
-.. - Some interesting task
-..   :task:`4000`
+- Blender Addon PBR :task:`52987`
