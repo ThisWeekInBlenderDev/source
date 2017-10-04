@@ -44,7 +44,7 @@ templates_path = ['../resources/templates']
 html_title = 'This Week in Blender Development'
 html_short_title = 'This Week in Blender Dev'
 
-html_static_path = ["../theme"]
+html_static_path = ["../resources/theme"]
 
 # visual noise for my purpose
 html_show_copyright = False
