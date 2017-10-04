@@ -28,7 +28,7 @@ googleanalytics_id = 'UA-105840115-1'
 # The suffix of source filenames.
 source_suffix = '.rst'
 
-exclude_patterns = ['template.rst']
+# exclude_patterns = ['']
 master_doc = 'index'
 
 # General information about the project.
@@ -36,19 +36,9 @@ project = 'This Week in Blender Development'
 copyright = 'Creative Commons'
 
 # include at end of every file
-rst_epilog = """
-----
+# rst_epilog = ''
 
-.. |vertical_separator| unicode:: U+02758
-
-`rss feed <rss.xml>`__
-|vertical_separator|
-:doc:`all weeks <feed>`
-|vertical_separator|
-`source code <https://github.com/ThisWeekInBlenderDev/source>`__
-|vertical_separator|
-`cc-by-sa 4.0 <https://creativecommons.org/licenses/by-sa/4.0>`__
-"""
+templates_path = ['../resources/templates']
 
 # without this it calls it 'documentation', which it's not
 html_title = 'This Week in Blender Development'
