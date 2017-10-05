@@ -41,6 +41,8 @@ Changes to Blender
   :rev:`Ba4721c05040fce606d6c6ccc4ea91bdf6c8846e8`
 - Python: bump minimum version to 3.6
   :rev:`Bcbe07d980ccc860cb01549272fc95c08912581d7`
+- Cycles: CUDA faster rendering of small tiles, using multiple samples like OpenCL.
+  :rev:`B6da6f8d33f65b427162d0c8b13a5a5f5043bc8a5`
 
 .. rubric:: blender2.8
 
@@ -51,7 +53,7 @@ Changes to Blender
 
 - Add curve options to Thick modifier
   :rev:`Bef4c69a71594ceb42aac8e4d4cd0ed0523adb34f`
-- Add new color pallet system
+- Add new color pallet slot system
   :rev:`B7c9467ae1fd0bfcf97dd5411fee0be60becb7325`
 - Add a work in progress implmentation of FXAA
   :rev:`Bcf87d5759bd1ffc87c0ca2128db3425f9062c8e6`
