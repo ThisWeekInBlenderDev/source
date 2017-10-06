@@ -20,7 +20,7 @@ Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
-.. SHA1 range: 88a08ef8ad41..39e60c30675
+.. SHA1 range: 88a08ef8ad41..d7d32ad4521
 
 Changes to Blender
 ==================
@@ -43,6 +43,8 @@ Changes to Blender
   :rev:`Bcbe07d980ccc860cb01549272fc95c08912581d7`
 - Cycles: CUDA faster rendering of small tiles, using multiple samples like OpenCL.
   :rev:`B6da6f8d33f65b427162d0c8b13a5a5f5043bc8a5`
+- Sculpt Mode: Add 2D falloff option
+  :rev:`Bd8509b349d1d6219923615e7af81267bb6f06b68`
 
 .. rubric:: blender2.8
 
