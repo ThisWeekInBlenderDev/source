@@ -45,11 +45,23 @@ Changes to Blender
   :rev:`B6da6f8d33f65b427162d0c8b13a5a5f5043bc8a5`
 - Sculpt Mode: Add 2D falloff option
   :rev:`Bd8509b349d1d6219923615e7af81267bb6f06b68`
+- Vertex Paint: use brush front-face setting
+  :rev:`B8ef757df3d2ab5867f2361908e524a7de0f4489e`
+- Vertex Paint: move normal falloff into the brush
+  :rev:`B471be7e7f58a4776857666df13e473c8ea0f4fd5`
+
 
 .. rubric:: blender2.8
 
 - Eevee: Lamps: Change ESM default exponent
   :rev:`Bdc327e2793ba21df02ee2b7787d35170e92a1521`
+- Eevee: Shadows: Add Contact Shadows
+  :rev:`Bdfcdec914ce918adf6c47d3c1e278b5a5c22fb4d`
+
+.. rubric:: topbar
+
+- Add 'x' icon to active workspace tab to delete workspace
+  :rev:`B33bed11248884334754f9744312e29af8da0b99e`
 
 .. rubric:: greasepencil-object
 
