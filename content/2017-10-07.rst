@@ -20,7 +20,7 @@ Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
-.. SHA1 range: 88a08ef8ad41..d7d32ad4521
+.. SHA1 range: 88a08ef8ad41..f61c340bc15
 
 Changes to Blender
 ==================
@@ -49,7 +49,10 @@ Changes to Blender
   :rev:`B8ef757df3d2ab5867f2361908e524a7de0f4489e`
 - Vertex Paint: move normal falloff into the brush
   :rev:`B471be7e7f58a4776857666df13e473c8ea0f4fd5`
-
+- Cycles: CUDA bicubic and tricubic texture interpolation 
+  :rev:`B2d92988f6bc4ec475d685c5cdfb84ba23c1a95ba`
+- Cycles: OpenCL bicubic and tricubic texture interpolation support
+  :rev:`Bf61c340bc15ef1573dc48f65fc7c71fce0a47a07`
 
 .. rubric:: blender2.8
 
