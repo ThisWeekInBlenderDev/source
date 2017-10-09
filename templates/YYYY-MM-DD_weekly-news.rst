@@ -15,6 +15,8 @@ suite for the next generation of artist. Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
+.. SHA1 range: First-commit..Last-commit
+
 Changes to Blender
 ==================
 
