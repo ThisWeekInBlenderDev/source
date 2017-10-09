@@ -74,14 +74,14 @@ Weekly reports
 
 .. Include links here to each of the core team member's weekly reports
 
-- `Bastien Montagne <https://wiki.blender.org/index.php/User:Mont29/Foundation/2017#Week_212_-_10.2F02_to_10.2F06>`
+- `Bastien Montagne <https://wiki.blender.org/index.php/User:Mont29/Foundation/2017#Week_212_-_10.2F02_to_10.2F06>`__
 
-- `Campbell Barton <http://download.blender.org/ftp/ideasman42/donelist/2017.html#week-342-october-2>`
+- `Campbell Barton <http://download.blender.org/ftp/ideasman42/donelist/2017.html#week-342-october-2>`__
 
-- `Clément Foucault <https://wiki.blender.org/index.php/User:Hypersomniac/Foundation/2017#Week_43:_2th_-_8st_October>`
+- `Clément Foucault <https://wiki.blender.org/index.php/User:Hypersomniac/Foundation/2017#Week_43:_2th_-_8st_October>`__
 
-- `Dalai Felinto <https://wiki.blender.org/index.php/User:Dfelinto/Foundation17#Week_19_.28October_2nd_-_6th.29>`
+- `Dalai Felinto <https://wiki.blender.org/index.php/User:Dfelinto/Foundation17#Week_19_.28October_2nd_-_6th.29>`__
 
-- `Sergey Sharybin <https://wiki.blender.org/index.php/User:Nazg-gul/Foundation/2017#Week_305:_2nd_-_8th_October>`
+- `Sergey Sharybin <https://wiki.blender.org/index.php/User:Nazg-gul/Foundation/2017#Week_305:_2nd_-_8th_October>`__
 
 .. cut::
