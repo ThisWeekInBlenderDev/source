@@ -96,3 +96,7 @@ Other Projects
 ==============
 
 - Blender Addon PBR :task:`52987`
+
+Documentation
+=============
+- `Blender 2.8 Design Document <https://code.blender.org/2017/10/blender-2-8-design-document/>`__
