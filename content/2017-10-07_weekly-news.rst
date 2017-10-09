@@ -1,7 +1,7 @@
 
-**********************
-2017-10-07 Weekly News
-**********************
+***********************
+2017-10-07: Weekly News
+***********************
 
 .. feed-entry::
    :date: 2017-10-07
@@ -99,4 +99,5 @@ Other Projects
 
 Documentation
 =============
+
 - `Blender 2.8 Design Document <https://code.blender.org/2017/10/blender-2-8-design-document/>`__
