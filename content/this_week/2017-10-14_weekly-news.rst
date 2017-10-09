@@ -49,7 +49,8 @@ Changes to Blender
 New Patches
 ===========
 
-No new patches so far.
+- Cycles: Allow rendering with GPUs an CPUs at once
+  :diff:`2873`
 
 Other Projects
 ==============
