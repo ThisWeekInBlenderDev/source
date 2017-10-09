@@ -1,7 +1,7 @@
 
-***************
-Week 2017-10-07
-***************
+**********************
+2017-10-07 Weekly News
+**********************
 
 .. feed-entry::
    :date: 2017-10-07
@@ -10,7 +10,7 @@ Hello and welcome the first issue of This Week in Blender Development.
 The goal of the project is to allow users to easily see what has happened
 in development over the past week.
 
-This is not a list of everything, our aim s to list changes of interest to end users.
+This is not a list of everything, our aim is to list changes of interest to end users.
 
 `Blender <https://www.blender.org/>`__ is the free and open-source 3D creation suite for the next generation of artist.
 Follow the development on Twitter
