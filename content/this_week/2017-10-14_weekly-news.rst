@@ -15,7 +15,7 @@ suite for the next generation of artist. Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
-.. SHA1 range: 4b3e6cb728c..e9d06f08669
+.. SHA1 range: 4b3e6cb728c..d46842108dd
 
 Changes to Blender
 ==================
@@ -31,6 +31,18 @@ Changes to Blender
 
 - Eevee: Improve cache performance by 13%
   :rev:`Bf7db1a4366e8391aea87cc39a5e7bfd6141dd283`
+- Manipulators: add cage3d scale widge
+  :rev:`Bc90ec276b8a578527861c1e6eaae766efea0c27b`
+- Eevee: Probe: Add Cubemap Resolution option
+  :rev:`Bd46842108ddea98c2ec6c437e87888f2267a311c`
+
+.. rubric:: greasepencil-object
+
+- Enable MSAA for strokes
+  :rev:`B049eb49f9aaaf02c67197cfcef8ddba0340dcb99`
+
+.. rubric:: asset-engine
+   :rev:`B504287b9877a85be40dc80fe700f5d80319d06ec`
 
 New Patches
 ===========
