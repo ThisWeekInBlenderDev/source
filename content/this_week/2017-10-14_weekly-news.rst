@@ -15,7 +15,7 @@ suite for the next generation of artist. Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
-.. SHA1 range: 4b3e6cb728c..d46842108dd
+.. SHA1 range: 4b3e6cb728c..5f025a7e5e0
 
 Changes to Blender
 ==================
@@ -26,6 +26,8 @@ Changes to Blender
   :rev:`Be360d003ea45ee233c6f10c03ff57c956929b383`
 - UI: VSE strip menu reorganization
   :rev:`Be9d06f086698049447fe004fec20d715b603a571`
+- Cycles: Speedup up tangent space calculation
+  :rev:`B4fce3c7ac079923fb6d124e5c89590e0611b07b5`
 
 .. rubric:: blender2.8
 
