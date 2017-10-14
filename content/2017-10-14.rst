@@ -15,7 +15,7 @@ suite for the next generation of artist. Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
-.. SHA1 range: 4b3e6cb728c..5f025a7e5e0
+.. SHA1 range: 4b3e6cb728c..61fe8e8acaf
 
 Changes to Blender
 ==================
@@ -44,15 +44,28 @@ Changes to Blender
   :rev:`B049eb49f9aaaf02c67197cfcef8ddba0340dcb99`
 
 .. rubric:: asset-engine
-   :rev:`B504287b9877a85be40dc80fe700f5d80319d06ec`
+
+- Add initial, very basic/proof-of-concept for drag and drop linking
+  :rev:`B504287b9877a85be40dc80fe700f5d80319d06ec`
 
 New Patches
 ===========
 
-- Cycles: Allow rendering with GPUs an CPUs at once
-  :diff:`2873`
+- VSE: Add new Blend Effect strip :diff:`2872`
+- Cycles: Allow rendering with GPUs an CPUs at once :diff:`2873`
+- Cycles: Speed up rendering by adding BVH8 :diff:`2875`
+- UI Reorganize 3D View Menus: View, Add and Object Menu :diff:`2876`
+- 2.8: New Viewport: Make the internal depth drawing of external engines optional
+  (Proof of Concept) :diff:`2877`
+- 2.8: Layers: Add new layer evaluation meathod :diff:`2878`
 
 Other Projects
 ==============
 
-No new pojects so far.
+- New Tool System Proposal :task:`53047`
+
+Documentation
+=============
+
+As a reminder please read the `Blender 2.8 Design Document
+<https://code.blender.org/2017/10/blender-2-8-design-document/>`__
