@@ -22,6 +22,15 @@ Changes to Blender
 
 .. rubric:: master
 
+.. rubric:: blender2.8
+
+.. rubric:: greasepencil-object
+
+- Rename Panel Primitives to Shapes
+  :rev:`B5c3dcad7f38055295d50869f8bab99bb399e0f4f`
+- New Select Alternate operator
+  :rev:`B07ec03d4f8024dbff0c685321cd1376c03bb62cc`
+
 New Patches
 ===========
 
