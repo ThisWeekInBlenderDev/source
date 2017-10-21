@@ -15,14 +15,19 @@ suite for the next generation of artist. Follow the development on Twitter
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
 
-.. SHA1 range: 7cd9926fd87..
+.. tip::
+
+   Remember, you can test any changes done in `master` or `blender2.8`
+   by going to the `developmental builds download page <https://builder.blender.org/download/>`__
+
+.. SHA1 range: 7cd9926fd87..b66728d63de
 
 Changes to Blender
 ==================
 
 .. rubric:: master
 
-- Add some basic 4K render presets
+- Render Settings: Add basic 4K render presets
   :rev:`Bf4b5d0ba3a7ec4d739a37e5038f73b8a4cb191f3`
 - Animation: Make auto handle placement aware of cyclic extrapolation
   :rev:`B1cb884be35e160740e97065afd6548e6a052c9d8`
@@ -39,7 +44,7 @@ Changes to Blender
 
 .. rubric:: blender2.8
 
-- Workspace: Move engines to workspace and cleanup the Properties Editor UI
+- Workspace: Move engines to workspaces and cleanup the Properties Editor UI
   :rev:`Be4f2b2be26adbb5c34231598526a270559c6e183`
 - Change the default engine to the clay engine
   :rev:`B0bcb61b2fe94d389332f91762cf07c2691c9fb93`
@@ -50,7 +55,7 @@ Changes to Blender
 
 - Rename Panel Primitives to Shapes
   :rev:`B5c3dcad7f38055295d50869f8bab99bb399e0f4f`
-- New Select Alternate operator
+- Add new Select Alternate operator
   :rev:`B07ec03d4f8024dbff0c685321cd1376c03bb62cc`
 - Add rectangle and circle Grease Pencil primitives
   :rev:`B1363002b57f44f25abf0361692f41ee6ad159324`
@@ -59,7 +64,7 @@ Changes to Blender
 
 - UI: Add one main 'Edit' toggle to Amber
   :rev:`B9fb243f96dc921aa6a2774799b8c731282d95650`
-- Amber assets: add more editing UI
+- Amber assets: Expose more tools to the UI
   :rev:`Bbac215bc67287e832c3eb1887491e1e542a72845`
 
 New Patches
@@ -91,5 +96,7 @@ Other Projects
 Documentation
 =============
 
-As a reminder please read the `Blender 2.8 Design Document
-<https://code.blender.org/2017/10/blender-2-8-design-document/>`__
+.. note::
+
+   As a reminder please read the `Blender 2.8 Design Document
+   <https://code.blender.org/2017/10/blender-2-8-design-document/>`__
