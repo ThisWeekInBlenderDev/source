@@ -7,6 +7,12 @@ body {
 }
 /*End remove giant gap on bottom of pages*/
 
+/*Make links in admonitions visible*/
+.admonition a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
 /*Make links a little darker in color*/
 a {
   color: #159d82;
