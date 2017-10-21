@@ -1,10 +1,10 @@
 
 ***********************
-2017-10-21: Weekly News
+2017-10-28: Weekly News
 ***********************
 
 .. feed-entry::
-   :date: 2017-10-21
+   :date: 2017-10-28
 
 Hello and welcome to another issue of *This Week in Blender Development*!
 `Blender <https://www.blender.org/>`__ is the free and opensource 3D creation
@@ -20,72 +20,17 @@ so please report any recommendations, bugs, or PRs there.
    Remember, you can test any changes done in `master` or `blender2.8`
    by going to the `developmental builds download page <https://builder.blender.org/download/>`__
 
-.. SHA1 range: 7cd9926fd87..b66728d63de
+.. SHA1 range:
 
 Changes to Blender
 ==================
 
 .. rubric:: master
 
-- Render Settings: Add basic 4K render presets
-  :rev:`Bf4b5d0ba3a7ec4d739a37e5038f73b8a4cb191f3`
-- Animation: Make auto handle placement aware of cyclic extrapolation
-  :rev:`B1cb884be35e160740e97065afd6548e6a052c9d8`
-- UI: 3D View "View" menu reorganization
-  :rev:`Ba6fdec305a6b16d0f945e753438c77b11d1da937`
-- UI: 3D View Mesh "Select" menu reorganization
-  :rev:`Bb82b55a3138d2a6afdc18460a6342774029d00f2`
-- UI: 3D View, minor menu reorganization
-  :rev:`Ba8fb08b19cf9ddbf3185754c41a9da533f8de65b`
-- UI: 3D View, undo menu reorganization
-  :rev:`B0aa6d44a79b0f26ac2929d68794d54b4a48fdd26`
-- UI: 3D View, object menu reorganization
-  :rev:`B351222c26f0ee7ce31ee1ee10f45dcebd3fe319f`
-
 .. rubric:: blender2.8
-
-- Workspace: Move engines to workspaces and cleanup the Properties Editor UI
-  :rev:`Be4f2b2be26adbb5c34231598526a270559c6e183`
-- Change the default engine to the clay engine
-  :rev:`B0bcb61b2fe94d389332f91762cf07c2691c9fb93`
-- Depsgraph: Make Copy-on-Write a command line option (can be used to enable modifiers and animations again)
-  :rev:`B3e8abc0535aaeb736310a1b7a5447df1721ff349`
-
-.. rubric:: greasepencil-object
-
-- Rename Panel Primitives to Shapes
-  :rev:`B5c3dcad7f38055295d50869f8bab99bb399e0f4f`
-- Add new Select Alternate operator
-  :rev:`B07ec03d4f8024dbff0c685321cd1376c03bb62cc`
-- Add rectangle and circle Grease Pencil primitives
-  :rev:`B1363002b57f44f25abf0361692f41ee6ad159324`
-
-.. rubric:: asset-engine
-
-- UI: Add one main 'Edit' toggle to Amber
-  :rev:`B9fb243f96dc921aa6a2774799b8c731282d95650`
-- Amber assets: Expose more tools to the UI
-  :rev:`Bbac215bc67287e832c3eb1887491e1e542a72845`
 
 New Patches
 ===========
-
-- blender2.8: Support Marking Operator Properties as Basic or Advanced
-  :diff:`2881`
-- blender2.8: Initial Tool System
-  :diff:`2882`
-- blender2.8 RNA-property tagging using tags defined by struct (+ operator properties tagged 'BASIC')
-  :diff:`2883`
-- Implement a new automatic handle algorithm to produce smooth F-Curves
-  :diff:`2884`
-- Add eyedropper to colorramp node
-  :diff:`2886`
-- Grease Pencil Branch (greasepencil-object)
-  :diff:`2889`
-- Cycles: Add out of view dicing falloff and dicing camera
-  :diff:`2891`
-- blender2.8: Initial work for groups in collections
-  :diff:`2892`
 
 Other Projects
 ==============
