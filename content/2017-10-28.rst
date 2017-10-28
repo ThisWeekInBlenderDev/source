@@ -6,14 +6,7 @@
 .. feed-entry::
    :date: 2017-10-28
 
-Hello and welcome to another issue of *This Week in Blender Development*!
-`Blender <https://www.blender.org/>`__ is the free and opensource 3D creation
-suite for the next generation of artist. Follow the development on Twitter
-`@BlenderDev <https://twitter.com/BlenderDev>`__.
-
-*This Week in Blender Development* is openly developed on
-`Github <https://github.com/ThisWeekInBlenderDev>`__
-so please report any recommendations, bugs, or PRs there.
+.. include:: include_intro.rst
 
 .. tip::
 
@@ -29,7 +22,7 @@ Changes to Blender
 
 - Cycles: Disable progressive refine if denoising or save buffers is used
   :rev:`B6199a606a6fad1722d1f4b2152e895d655db4757`
-- Moddling: Speed up Polyfill Beautify by 33%
+- Modeling: Speed up Polyfill Beautify by 33%
   :rev:`B6dfe4cbc6b8717223c631e80af6c7552576966e1`
 - VSE: draw grid lines at every second
   :rev:`Bcc96cdd9d49c6029e2abc62d81556e2f22480438`

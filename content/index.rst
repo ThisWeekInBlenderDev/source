@@ -27,3 +27,4 @@ Weeks
    :hidden:
 
    feed
+   include_intro
