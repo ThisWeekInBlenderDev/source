@@ -1,10 +1,10 @@
 
 ***********************
-2017-10-28: Weekly News
+2017-11-04: Weekly News
 ***********************
 
 .. feed-entry::
-   :date: 2017-10-28
+   :date: 2017-11-04
 
 Hello and welcome to another issue of *This Week in Blender Development*!
 `Blender <https://www.blender.org/>`__ is the free and opensource 3D creation
@@ -20,7 +20,7 @@ so please report any recommendations, bugs, or PRs there.
    Remember, you can test any changes done in `master` or `blender2.8`
    by going to the `developmental builds download page <https://builder.blender.org/download/>`__
 
-.. SHA1 range:
+.. SHA1 range: 145077bea75..
 
 Changes to Blender
 ==================
