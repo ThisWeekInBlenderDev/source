@@ -36,6 +36,7 @@ Changes to Blender
 - Manipulator: move 'Scale Cage' to its own tool
   :rev:`Bd3fafa3002847af913125ef71a5b70b1580f5189`
 - Tool System: add an experimental low-poly construction tool
+  (`see demo video <https://www.youtube.com/watch?v=TJ6Dh77nQw4>`__)
   :rev:`Bcd3c31b2c02ed024be2d772e37da73d9aa4dc220`
 - Remove background images from 3D view and add them to the camera
   :rev:`Bef96f36ee961e7f11556570da2b9cef0a08159f9`  
