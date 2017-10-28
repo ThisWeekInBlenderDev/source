@@ -1,0 +1,102 @@
+
+***********************
+2017-10-28: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-10-28
+
+Hello and welcome to another issue of *This Week in Blender Development*!
+`Blender <https://www.blender.org/>`__ is the free and opensource 3D creation
+suite for the next generation of artist. Follow the development on Twitter
+`@BlenderDev <https://twitter.com/BlenderDev>`__.
+
+*This Week in Blender Development* is openly developed on
+`Github <https://github.com/ThisWeekInBlenderDev>`__
+so please report any recommendations, bugs, or PRs there.
+
+.. tip::
+
+   Remember, you can test any changes done in `master` or `blender2.8`
+   by going to the `developmental builds download page <https://builder.blender.org/download/>`__
+
+.. SHA1 range: b66728d63de..145077bea75
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: Disable progressive refine if denoising or save buffers is used
+  :rev:`B6199a606a6fad1722d1f4b2152e895d655db4757`
+- Moddling: Speed up Polyfill Beautify by 33%
+  :rev:`B6dfe4cbc6b8717223c631e80af6c7552576966e1`
+- VSE: draw grid lines at every second
+  :rev:`Bcc96cdd9d49c6029e2abc62d81556e2f22480438`
+- Cycles: use AO factor to let user adjust intensity of AO bounces
+  :rev:`B171c4e982f7b6c93b534a48cfe8aba73dec78030`
+
+.. rubric:: blender2.8
+
+- Initial Tool System
+  :rev:`Be1e7b6db2e01d8ea2219d410200a8856d4597222`
+- Manipulator: move 'Scale Cage' to its own tool
+  :rev:`Bd3fafa3002847af913125ef71a5b70b1580f5189`
+- Tool System: add an experimental low-poly construction tool
+  :rev:`Bcd3c31b2c02ed024be2d772e37da73d9aa4dc220`
+- Remove background images from 3D view and add them to the camera
+  :rev:`Bef96f36ee961e7f11556570da2b9cef0a08159f9`  
+- Eevee: Volumetrics: Add volumetric support to alpha blended meshes.
+  :rev:`B310f1db7bf508c764dde47ff85bccb31458b1893`
+- Eevee: Overhaul the volumetric system.
+  :rev:`B66d8f82b832b58cba3273c0a4196fae6db0e1efd`
+- Eevee: Volumetrics: Add Volume object support.
+  :rev:`B4f7665c84410e9e25360b0d80ce073c54242e5d4`
+- Eevee: Volumetrics: Support Smoke simulation textures
+  :rev:`Bbc7c0335dc7e1cae93c3f4b7bfdaa02f2cae6128`
+
+.. rubric:: topbar
+
+- Operator settings: Add simple "More..." button to show all settings
+  :rev:`B3ebfd533cad51979346470d523c9bc97da84c456`
+
+.. rubric:: asset-engine
+
+- Amber: Add a way to remove Amber repo, and initial step for previews
+  :rev:`Be524370158ba15c2d7726960c9201bb3371a4e4a`
+- Amber: Add initial real asset preview.
+  :rev:`B7a68cd02980b9b2834847a2adacf822a59df1b75`
+- Amber: General development working on filtering and adding assets
+  :rev:`B0f72a2916ca11bbdf7ec01a43e820e786264eb6a`
+- Amber: add new assets with relative path to repository
+  :rev:`Bdce7e076dae9dae9d88d232300ac6c30e02f08c3`
+- Use a more 'generic' way to select datablock to add as an asset
+  :rev:`Bb9f4a8d75f11a5d1a619752641b02200547a7661`
+
+New Patches
+===========
+
+- Cycles: combined CUDA + OpenCL rendering support.
+  :diff:`2894`
+- Normal Editing Tools - GSoC 2017
+  :diff:`2897`
+- Blender2.8: Edit Mesh: re-enable text overlay (length, area, angle)
+  :diff:`2901`
+- HMD_viewport: oversampling / undersampling feature implemented.
+  :diff:`2902`
+
+Other Projects
+==============
+
+- Top Bar Design
+  :task:`50845`
+- Tool System: Where operators can take advantage of a tool system
+  :task:`53101`
+
+Documentation
+=============
+
+.. note::
+
+   As a reminder please read the `Blender 2.8 Design Document
+   <https://code.blender.org/2017/10/blender-2-8-design-document/>`__
