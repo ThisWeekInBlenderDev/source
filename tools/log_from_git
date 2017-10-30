@@ -41,7 +41,8 @@ def rst_write_commit(
     body = c.body[len(subject):]
     subject = plain_text_to_rst(subject)
     body = plain_text_to_rst(body)
-    fw('- {} :rev:`B{}`\n'.format(subject.rstrip('.:'), c.sha1.decode('ASCII')))
+    fw('- {}\n'.format(subject.rstrip('.:')))
+    fw('  :rev:`B{}`\n'.format(c.sha1.decode('ASCII')))
 
     body = body.strip('\n')
     if body:
