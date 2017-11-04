@@ -1,0 +1,35 @@
+
+***********************
+2017-11-11: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-11-11
+   :hide:
+
+.. include:: include_intro.rst
+
+.. SHA1 range: 145077bea75..
+
+.. SHA1 range: 8bdc391c5488228dfe9c9e995277d67558293f08..
+.. DIFF range: 2907..
+.. TASK range: 53211..
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+.. rubric:: blender2.8
+
+New Patches
+===========
+
+
+Other Projects
+==============
+
+
+Documentation
+=============
+
