@@ -9,3 +9,8 @@ suite for the next generation of artist. Follow the development on Twitter
 *This Week in Blender Development* is openly developed on
 `Github <https://github.com/ThisWeekInBlenderDev>`__
 so please report any recommendations, bugs, or PRs there.
+
+.. tip::
+
+   Remember, you can test any changes done in `master` or `blender2.8`
+   by going to the `developmental builds download page <https://builder.blender.org/download/>`__

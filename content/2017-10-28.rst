@@ -9,11 +9,6 @@
 
 .. include:: include_intro.rst
 
-.. tip::
-
-   Remember, you can test any changes done in `master` or `blender2.8`
-   by going to the `developmental builds download page <https://builder.blender.org/download/>`__
-
 .. SHA1 range: b66728d63de..145077bea75
 
 Changes to Blender
