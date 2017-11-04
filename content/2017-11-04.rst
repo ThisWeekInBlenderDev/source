@@ -1,0 +1,74 @@
+
+***********************
+2017-11-04: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-11-04
+
+.. include:: include_intro.rst
+
+.. SHA1 range: 336885bebaa8c7b60041b139f02a29da475cf3ea..8bdc391c5488228dfe9c9e995277d67558293f08
+.. DIFF range: 2903..2907
+
+Changes to Blender
+==================
+
+Example:
+
+.. rubric:: master
+
+- Implement a new automatic handle algorithm to produce smooth F-Curves
+  :rev:`B8bdc391c5488228dfe9c9e995277d67558293f08`
+- Fix for :task:`48988` - Enabling bbone easing for posemode.
+  :rev:`Ba819ef65c07131ddb203a55bd8dc4e3207130b64`
+- Tracking: Create mesh from selected tracks only
+  :rev:`Bf1c724337613c2d2081523b3fd5e4d0315268622`
+- Alembic: added frame offset property
+  :rev:`B6099b2620d645f4129c42af2272cb6bd8538fc7a`
+- Alembic: exporting MetaBalls as mesh
+  :rev:`B89eb05a8908130f8668e4c677d63f3d2b89e68bb`
+- Curve Decimate: new tool to simplify bezier curves *(access from the curve clean-up menu)*
+  :rev:`B80465ba35a163c9832a4666fac74465561b7c6c5`
+- Heap re-insertion optimization for decimate and beautify *(~70% faster for decimate, only ~10% for beautify)*.
+  :rev:`B336885bebaa8c7b60041b139f02a29da475cf3ea`
+
+.. rubric:: blender2.8
+
+- Mesh Auto-Smooth Split Normal Support
+  `See results <https://twitter.com/AidyBurrows3D/status/926528793409392640>`__
+  :rev:`B59f238ba091187b968a125417cc9323cb9249deb`
+- Experiment with adding output file meta data from render engine
+  :rev:`B5296c2e099e92e30478a454049e72f170f71a624`
+- Collections: Bring back simple visibility behavior
+  :rev:`B7553523af7b34bfeede09b9acf0a95b84a2c15cf`
+- Draw Manager: re-enable edit-mesh text overlay
+  :rev:`B8277bee748188dbcab431e15bedd5c1b5559508a`
+
+.. rubric:: asset-engine
+
+- Add drag'n'drop-linking of material onto object in 3DView
+  :rev:`B92a06831a84ded45dabc5860ddf72b2e0556328a`
+- Amber: Add icon of data type to 'all data' assets add operator
+  :rev:`B0e256653b223c77cf9276350a106f3d02ee3f05a`
+
+
+New Patches
+===========
+
+Example:
+
+- Blender 2.8: Support Auto-Smooth in Edit-Mesh and allocate loop_normals in MeshRenderData instead of CustomData
+  :diff:`2907`
+- Cycles: Add option that makes background visible through glass have alpha transparency
+  :diff:`2904`
+- Cycles: Add Scatter Direct and Scatter Indirect passes
+  :diff:`2903`
+
+Other Projects
+==============
+
+- RFC: Clang-format for Blender
+  :task:`53211`
+
+.. cut::
