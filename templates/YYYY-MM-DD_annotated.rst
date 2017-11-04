@@ -10,6 +10,8 @@
 .. include:: include_intro.rst
 
 .. SHA1 range: First-commit..Last-commit
+.. DIFF range: First-diff..Last-diff
+.. TASK range: First-task..Last-task
 
 Changes to Blender
 ==================
