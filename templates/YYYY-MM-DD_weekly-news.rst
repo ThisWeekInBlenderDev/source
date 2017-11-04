@@ -5,6 +5,7 @@
 
 .. feed-entry::
    :date: 3000-01-01
+   :hide:
 
 .. include:: include_intro.rst
 

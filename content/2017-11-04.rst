@@ -5,6 +5,7 @@
 
 .. feed-entry::
    :date: 2017-11-04
+   :hide:
 
 .. include:: include_intro.rst
 
@@ -13,8 +14,6 @@
 
 Changes to Blender
 ==================
-
-Example:
 
 .. rubric:: master
 
@@ -55,8 +54,6 @@ Example:
 
 New Patches
 ===========
-
-Example:
 
 - Blender 2.8: Support Auto-Smooth in Edit-Mesh and allocate loop_normals in MeshRenderData instead of CustomData
   :diff:`2907`

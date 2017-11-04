@@ -92,11 +92,13 @@ class FeedEntryDirective(Directive):
     option_spec = {
             'author': directives.unchanged,
             'date': directives.unchanged_required,
+            'hide': directives.flag,
     }
 
     def run(self):
         author = self.options.get('author')
         date = self.options.get('date')
+        hide = 'hide' in self.options
         for format in ["%Y-%m-%d"]:
             try:
                 date = datetime.datetime.strptime(date, format)
@@ -108,20 +110,23 @@ class FeedEntryDirective(Directive):
             return [doc.reporter.error("invalid date `%s`" % date,
                                        lineno=self.lineno)]
         meta_node = entrymeta(classes=['feed-meta'])
-        meta_node += nodes.Text('Published')
-        if author:
-            meta_node += nodes.Text(' by ')
-            author_node = nodes.emphasis(classes=['feed-author'])
-            author_node += nodes.Text(author)
-            meta_node += author_node
-        if date:
-            meta_node += nodes.Text(' on ')
-            date_node = nodes.emphasis(classes=['feed-date'])
-            if not date.time():
-                date_node += nodes.Text(date.date())
-            else:
-                date_node += nodes.Text(date)
-            meta_node += date_node
+
+        # include text in the page? or just meta-data
+        if not hide:
+            meta_node += nodes.Text('Published')
+            if author:
+                meta_node += nodes.Text(' by ')
+                author_node = nodes.emphasis(classes=['feed-author'])
+                author_node += nodes.Text(author)
+                meta_node += author_node
+            if date:
+                meta_node += nodes.Text(' on ')
+                date_node = nodes.emphasis(classes=['feed-date'])
+                if not date.time():
+                    date_node += nodes.Text(date.date())
+                else:
+                    date_node += nodes.Text(date)
+                meta_node += date_node
         meta_node['author'] = author
         meta_node['date'] = date
         return [meta_node]
