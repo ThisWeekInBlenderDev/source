@@ -13,7 +13,8 @@
 Changes to Blender
 ==================
 
-.. first list changes in master then branches.
+.. First list changes in master then branches,
+   Order from newest to oldest!
 
 Example:
 
