@@ -82,7 +82,10 @@ def argparse_create():
         metavar='SHA1_RANGE',
         required=False,
         default='HEAD',
-        help='Range to use, eg: 169c95b8..HEAD',
+        help=(
+            'Range to use, eg: 169c95b8..HEAD '
+            'or optionally comma separated SHA1 values to log explicit commits.'
+        ),
     )
     parser.add_argument(
         '--author', dest='author',
@@ -107,9 +110,19 @@ def rst_write_log(
         author=None,
         extra_args=(),
 ):
+    print('{} ...'.format(output))
     with open(output, 'w') as fh:
         fw = fh.write
-        for c in GitCommitIter(source_dir, range_sha1 or 'HEAD', extra_args=extra_args):
+        if range_sha1 and (',' in range_sha1):
+            commit_iter = (
+                c
+                for sha1 in range_sha1.split(',')
+                for c in GitCommitIter(source_dir, sha1.strip(), extra_args=extra_args + ('-1',))
+            )
+        else:
+            commit_iter = GitCommitIter(source_dir, range_sha1 or 'HEAD', extra_args=extra_args)
+
+        for c in commit_iter:
             if author is None or author == c.author:
                 rst_write_commit(fw, c, use_author=author is None, use_date=True)
 
@@ -155,7 +168,7 @@ def main():
     # Exclude merge commits: https://stackoverflow.com/a/8527200/432509
     extra_args = ('--no-merges', '--first-parent')
 
-    if args.author:
+    if args.author or (args.range_sha1 and ',' in args.range_sha1):
         # for now write a single log for the author
         rst_write_log(
             args.source_dir,
