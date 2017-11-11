@@ -7,7 +7,7 @@
    :date: 2017-10-07
    :hide:
 
-.. include:: include_intro.rst
+.. include:: /include_intro.rst
 
 .. SHA1 range: 88a08ef8ad41..f61c340bc15
 

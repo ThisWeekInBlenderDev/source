@@ -7,7 +7,7 @@
    :date: 3000-01-01
    :hide:
 
-.. include:: include_intro.rst
+.. include:: /include_intro.rst
 
 .. SHA1 range: First-commit..Last-commit
 .. DIFF range: First-diff..Last-diff

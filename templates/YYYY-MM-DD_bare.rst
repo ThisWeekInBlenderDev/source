@@ -7,7 +7,7 @@
    :date: 2017-01-01
    :hide:
 
-.. include:: include_intro.rst
+.. include:: /include_intro.rst
 
 .. SHA1 range: 000..000
 .. DIFF range: D00..D00
