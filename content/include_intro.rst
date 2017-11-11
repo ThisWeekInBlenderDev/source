@@ -8,7 +8,10 @@ suite for the next generation of artist. Follow the development on Twitter
 
 *This Week in Blender Development* is openly developed on
 `Github <https://github.com/ThisWeekInBlenderDev>`__
-so please report any recommendations, bugs, or PRs there.
+so please report any recommendations, bugs, or PRs for this website there.
+
+If you have idea for some great feature that you think should be part of Blender
+try making a post on https://blender.community/c/rightclickselect/
 
 .. tip::
 
