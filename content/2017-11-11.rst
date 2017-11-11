@@ -20,7 +20,7 @@ Changes to Blender
 
 .. rubric:: master
 
-- Small (7%) performance increase in metaball tessilation
+- Small (7%) performance increase in metaball tessellation
   :rev:`Bd95eabf0a937e788e1ebd6f9297b3c80db7913e2`
 - Cycles: better distance sampling for chromatic volume extinction
   (see link for comparison images)
@@ -40,12 +40,12 @@ Changes to Blender
 
 - Manipulators: add a new ruler tool
   :rev:`B0260fad9ba41c3a714df9b39e6e6d171b143cf41`
-- Small speedup for viewport data cacheing (60% improvement)
+- Small speedup for viewport data caching (60% improvement)
   :rev:`Bed555750eb8294005f54425094cb692f29830631`
 - Support Auto-Smooth in Edit-Mode
   :rev:`B5d70e847dd6f5182fa67c3b08260fbb5366009b5`
 - UI: show tool-tips for each tools shortcuts
-  :rev:`Bfbfda21fe46b8fa7e8470e57d4eb3794a3a9c83a` 
+  :rev:`Bfbfda21fe46b8fa7e8470e57d4eb3794a3a9c83a`
 
 .. rubric:: greasepencil-object
 
@@ -64,8 +64,6 @@ New Patches
 
 - Optionally cancel render when a texture is missing
   :diff:`2908`
-- Simplify optimization for finding unique ID names (42% speed improvement)
-  :diff:`2909`
 - Experimental hashing lookup of ID's (14x speed improvement)
   :diff:`2910`
 - Cycles: Reducing amount of operations per intersect check
