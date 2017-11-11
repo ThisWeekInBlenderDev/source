@@ -1,0 +1,88 @@
+
+***********************
+2017-11-11: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-11-11
+   :hide:
+
+.. include:: include_intro.rst
+
+.. SHA1 range: 145077bea75..
+
+.. SHA1 range: 8bdc391c5488228dfe9c9e995277d67558293f08..42b43925fbdf94ace8105879ccba558544cddb1c
+.. DIFF range: 2907..2914
+.. TASK range: 53211..53297
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Small (7%) performance increase in metaball tessilation
+  :rev:`Bd95eabf0a937e788e1ebd6f9297b3c80db7913e2`
+- Cycles: better distance sampling for chromatic volume extinction
+  (see link for comparison images)
+  :rev:`Ba466d7ae248b2807b4e2f8693b458d3da509e9bc`
+- Cycles: add bevel shader, for raytrace based rounded edges
+  (see the link in the commit message for example images)
+  :rev:`B26f39e6359d1db85509a0ee1077b6d0af122a456`
+- Cycles: antialias normal baking if the mesh has a bump map
+  :rev:`Bd0af56fe3b6490445ba3e501b0fb98cfec622aa3`
+- Cycles: reduce closure memory usage for emission/shadow shader data
+  (30% memory improvement)
+  :rev:`B8a72be7697f8fbfc8cb6cc9f3df049104e41d4a6`
+- Cycles: fix inefficient attribute map storage, saves 615MB in victor scene.
+  :rev:`Bcac3d4d16691d77e8e01f158be07d182e56e9755`
+
+.. rubric:: blender2.8
+
+- Manipulators: add a new ruler tool
+  :rev:`B0260fad9ba41c3a714df9b39e6e6d171b143cf41`
+- Small speedup for viewport data cacheing (60% improvement)
+  :rev:`Bed555750eb8294005f54425094cb692f29830631`
+- Support Auto-Smooth in Edit-Mode
+  :rev:`B5d70e847dd6f5182fa67c3b08260fbb5366009b5`
+- UI: show tool-tips for each tools shortcuts
+  :rev:`Bfbfda21fe46b8fa7e8470e57d4eb3794a3a9c83a` 
+
+.. rubric:: greasepencil-object
+
+Along with the noted changes below, there was a lot of work done to have
+the changes reading to be merged into the `blender2.8` branch.
+
+- Add smoothing to the stroke thickness
+  :rev:`Bfce610eeedc663badb52d310ab8410d6ebfb2a22`
+- Add drawing parameter to adjust stroke stabilization
+  :rev:`Ba051c2e8701a856533681a0ec0a329eebdc55da7`
+- Add more parameters to define how the stroke is stabilized
+  :rev:`B526e2291ff93f3f4c18c341ec6518e52fb4c9b17`
+
+New Patches
+===========
+
+- Optionally cancel render when a texture is missing
+  :diff:`2908`
+- Simplify optimization for finding unique ID names (42% speed improvement)
+  :diff:`2909`
+- Experimental hashing lookup of ID's (14x speed improvement)
+  :diff:`2910`
+- Cycles: Reducing amount of operations per intersect check
+  (8% speed  improvement)
+  :diff:`2911`
+- Array Modifier: option to offset UV's
+  :diff:`2912`
+- blender2.8: support for metaball drawing
+  :diff:`2914`
+
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- None
