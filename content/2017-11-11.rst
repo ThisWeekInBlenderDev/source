@@ -64,7 +64,7 @@ New Patches
 
 - Optionally cancel render when a texture is missing
   :diff:`2908`
-- Experimental hashing lookup of ID's (14x speed improvement)
+- Experimental hashing lookup of ID's, replacing linked list lookups
   :diff:`2910`
 - Cycles: Reducing amount of operations per intersect check
   (8% speed  improvement)
