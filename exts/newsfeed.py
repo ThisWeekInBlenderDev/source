@@ -20,36 +20,37 @@ class FeedDirective(Directive):
             'link': directives.unchanged,
             'description': directives.unchanged,
             'glob': directives.flag,
+            'glob-regex': directives.flag,
     }
 
     @staticmethod
-    def _glob_content(env, content):
+    def _glob_content(env, content, glob_regex):
         ''' Support globbing, so we don't need to enumerate each page.
         '''
         import fnmatch, re
         docs = None
         for entry in content:
-            if "*" in entry:
-                # reverse since this is a newsfeed!
-                if docs is None:
-                    docs = sorted(env.found_docs, reverse=True)
-                re_comp = re.compile(fnmatch.translate(entry))
-                for entry_test in docs:
-                    if re_comp.match(entry_test):
-                        yield entry_test
+            if glob_regex:
+                re_comp = re.compile(entry)
             else:
-                yield entry
-
+                re_comp = re.compile(fnmatch.translate(entry))
+            # reverse since this is a newsfeed!
+            if docs is None:
+                docs = sorted(env.found_docs, reverse=True)
+            for entry_test in docs:
+                if re_comp.match(entry_test):
+                    yield entry_test
 
     def run(self):
         env = self.state.document.settings.env
         output = []
         entries = []
         includefiles = []
-        glob = 'glob' in self.options
+        glob_regex = 'glob-regex' in self.options
+        glob = glob_regex or 'glob' in self.options
 
         if glob:
-            content_iter = self._glob_content(env, self.content)
+            content_iter = self._glob_content(env, self.content, glob_regex)
         else:
             content_iter = self.content
 
