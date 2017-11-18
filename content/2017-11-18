@@ -1,0 +1,109 @@
+
+***********************
+2017-11-18: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-11-18
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 42b43925fbdf94ace8105879ccba558544cddb1c..cd1d9950aba1f4c759769e4896f2a9953d982eec
+.. DIFF range: 2914..	2921
+.. TASK range: 53297..53341
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Add select similar custom bone shape
+  :rev:`Bcd1d9950aba1f4c759769e4896f2a9953d982eec`
+- Mikktspace/Cycles: Speed up the merging of identical vertices (speeds up rendering)
+  :rev:`B119846a6bb366f5ae13db18d965083d7927ff11e`
+- Cycles: Add per-tile render time debug pass
+  :rev:`B40f528a7dabaf18ece587dafcaabf703973bfd40`
+- Cycles: Add Volume Direct and Volume Indirect passes for volume-scattered light
+  :rev:`Ba0c02e4d1b87f4e83c0dfe794f28482030be9896`
+- Fix UV Projection Center Calculation
+  :rev:`B759b50b20b96556f182e6d14ce23a89e2a673921`
+- Remove default 'Clear loc/rot/scale delta transform' shortcuts
+  :rev:`B556b13f03e561b54d4f0186e207f080c786f8b66`
+- Fix AMD Threadripper rendering performance issues.
+  :rev:`B55696b56d98411b6eeadfa1a7349bdb2bca47e38`
+- Cycles: Make per-object random value output also work for Lamps
+  :rev:`B212a8d9e5ae78a30ed4c35161d91eeca35eaa41f`
+- BMesh Py API: Expose color alpha
+  :rev:`Baae8e211006a1d9099397727b48201b865504750`
+
+.. rubric:: blender2.8
+
+- Eevee: SSS: Add cubic profile for the sake of completeness.
+  :rev:`B936ddde35cabc7f694bf0e83b3c8e505f0385532`
+- Eevee: SSS: Add SSS to the principled shader
+  :rev:`Bfcbb8e71c56a413dda47c233a35d6091e34dbdae`
+- Eevee: SSS: Add Christensen-Burley diffusion profile
+  :rev:`B57c3fbd324a6ecb6a432aef034c814fe45b2f544`
+- Draw Manager: Support for Metaball Drawing
+  :rev:`B88c88c4610260ef3d00420c3e9fc3c1cd56aad14`
+- Eevee: Add SSS objects to probe rendering
+  :rev:`Be70c563aa375a18dd272b4d6cad8ae1ef08fbabf`
+- Eevee: SSS: Add Quality settings
+  :rev:`B289f9f42ff049a672b5235230435c16bc361b04e`
+- Eevee: Initial Separable Subsurface Scattering implementation
+  :rev:`Bf8b14305668ff7b1f3ba6f886b9e1881c764b201`
+
+.. rubric:: greasepencil-object
+
+- Enable antialiasing while drawing
+  :rev:`Be6a0b442c7441c33e4f6204fa63d96dec32567da`
+- Smooth Strength and Thickness properties too
+  :rev:`B0b7c2ef28b5c4ea9df07219c93332ed41a82333f`
+- Improve subdivide stroke while drawing
+  :rev:`Baaed57792fa29dae5fbfe586018d79dafdc20770`
+- Check minimum tablet pressure
+  :rev:`B5819ab66fabbb86fed31dff6417401ae9ee2b254`
+- Cleanup UI and unused fields
+  :rev:`B330febba5a547ef1238dfb51c0ea1d8905eaf374`
+- New Smooth modifer
+  :rev:`B8b97a539aa5bb62d65e6a3505600df80253e09ea`
+- Remove smooth lower limit
+  :rev:`B541d7415bfd8006b8bcc9763f090b624106df4e8`
+- Smooth Thickness and Strength
+  :rev:`B333e32e0e13171eb2bb3672fd44c531a81d50e11`
+
+.. rubric:: fluid-mantaflow
+
+-  Re-enabled bubble rise factor and some small snd particles fixes
+   :rev:`B91ef5780c9075ddec2180515cc9b308038b97064`
+
+.. rubric:: hair_guides
+
+- Operator for generating hair follicles of the fur modifier
+  :rev:`Bc8ef6904d12d70e19f357e5d3bbfd1d5ba1f96f4`
+
+New Patches
+===========
+
+- Cycles: Speed up split kernel builds by splitting svm_eval_nodes out of direct_emission functions
+  :diff:`2916`
+- Notifier system (event publish/subscribe)
+  :diff:`2917`
+- Temporary fix for T53257: Too many color management transforms to display in the menu
+  :diff:`2918`
+- SceneRenderLayer Removal/Refactor
+  :diff:`2919`
+- Add initial UDIM support to BlenKernel, Image Editor and Cycles
+  :diff:`2921`
+
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- None
