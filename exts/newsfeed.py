@@ -42,7 +42,8 @@ class FeedDirective(Directive):
                     yield entry_test
 
     def run(self):
-        env = self.state.document.settings.env
+        doc = self.state.document
+        env = doc.settings.env
         output = []
         entries = []
         includefiles = []
@@ -59,7 +60,7 @@ class FeedDirective(Directive):
                 continue
             docname = docname_join(env.docname, entry)
             if docname not in env.found_docs:
-                output.append(self.state.document.reporter.warning(
+                output.append(doc.reporter.warning(
                     'feed contains a reference to nonexisting '
                     'document %r' % docname, line=self.lineno))
                 env.note_reread()
