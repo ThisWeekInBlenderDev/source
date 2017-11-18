@@ -4,7 +4,7 @@
 ***********************
 
 .. feed-entry::
-   :date: 2017-25-18
+   :date: 2017-11-25
    :hide:
 
 .. include:: /include_intro.rst
