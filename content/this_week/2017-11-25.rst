@@ -1,17 +1,17 @@
 
 ***********************
-2017-11-18: Weekly News
+2017-11-25: Weekly News
 ***********************
 
 .. feed-entry::
-   :date: 2017-11-18
+   :date: 2017-25-18
    :hide:
 
 .. include:: /include_intro.rst
 
-.. SHA1 range: 42b43925fbdf94ace8105879ccba558544cddb1c..
-.. DIFF range: 2914..
-.. TASK range: 53297..
+.. SHA1 range: cd1d9950aba1f4c759769e4896f2a9953d982eec..
+.. DIFF range: 2921..
+.. TASK range: 53341..
 
 Changes to Blender
 ==================
