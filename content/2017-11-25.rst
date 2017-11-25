@@ -1,0 +1,107 @@
+
+***********************
+2017-11-25: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-11-25
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: cd1d9950aba1f4c759769e4896f2a9953d982eec..9aece5e1e7748fa6020a3b6cbeabd17e1dc3bbaa
+.. DIFF range: 2921..2931
+.. TASK range: 53341..53389
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Speedup `BM_mesh_normals_update` (40% improvement)
+  :rev:`B43ddf0e9a7f0f9986ed24e05df0ce7eac5f944b6`
+- UI: Encoding output quality UI clarification
+  :rev:`Bf218e6d4da8dbfa4be809b46d6a6c923b7a6fc97`
+- Disable adding scene sequence strips into themselves
+  :rev:`B175e8fdc1e2e76bd1287f1aa93db4aa4cc44d3f9`
+- UV Cube Project: improve default behavior
+  :rev:`B65af15ad887b30e678db9acab75efc7897c9197e`
+- Add option not to select with un-hide
+  :rev:`B0a69e3b307f05aeab8bd84f69560b4118c9bfaf2`
+- Bake Action operator: Added missing Bendy Bones support
+  :rev:`Bfc77676f3326894482848b3f4e544c7569d5b440`
+- Pasting poses now updates motion paths
+  :rev:`Bc01ffefb687260c11b3eae8411e5af051f0ce10a`
+- Vertex Paint: missed removing settings from UI
+  :rev:`B10a112093fe8dd3553a67c3d671ca66c259f308b`
+
+.. rubric:: blender2.8
+
+- Eevee: Add SSS support in probes
+  :rev:`B5dfeecf47b575e54fddd3e915024b721efd29eb6`
+- Eevee: SSS: Add separated Albedo option
+  :rev:`B7cbc7dd90499f98e3f44f86fdacae5365e53cd77`
+- Python API: expose base_flag settings (depsgraph)
+  :rev:`B4493d0d085b0ba37e069d1129004d54e98f31231`
+- Cycles: add object level holdout property, to replace Z mask layer.
+  :rev:`Bf8fc77ec8481fbbe253ec73d701beab278fdeaf3`
+- Python API: Allow structs to define tags for their properties
+  :rev:`B23d148ecaf923a490c3dd4a22d6dd96ea7cb9654`
+- SceneRenderLayer Removal/Refactor
+  :rev:`B3a95bdfc65d883e7db006fdaadb8ed2cd6553239`
+- Eevee: SSS: Add Translucency support
+  :rev:`B846cdf53187174ac87dd24af4b7b0d413db4ad03`
+
+.. rubric:: greasepencil-object
+
+- Add Hook Modifier
+  :rev:`B9215e2a09717db3acfb4da8f3595c76d7afc3b16`
+- Add grid option to grease pencil paper
+  :rev:`B5517049481c5b5525561e43c34c1ae08dbb620a9`
+- Add new paper function for adding a solid color background
+  :rev:`Be2adbc9bca7fc95cf8f9f9c86284725880da8c8a`
+- Add Build Modifier
+  :rev:`Bf43aecba88aa8d712ce5fd647b6e2a0549f3a9ae`
+- Add some buttons to the bottom bar
+  :rev:`B2a47ede614dd14834b832a9467b204e3223cf4d4`
+- UI: Rename MultiEdit to MultiFrame
+  :rev:`Ba666a5d0164313e0743af129a645511f04bb1b17`
+
+.. rubric:: hair_guides
+
+- Material pointer in hair systems
+  :rev:`B56c1388ee494d776733c3d79c4359c1523bfcacf`
+- Simplified API for generating hair follicles with a fixed max count
+  :rev:`B5be3403a1d82b51078a122ea54234a1eaed2001d`
+- Extend the fur generate modifier to also create guide curves
+  :rev:`B2d24189369815aff49c61c01faac3fe83d68d167`
+- Start adding hair draw settings
+  :rev:`Bc6ddb6fdd9bd6cd86312850bbbbdfaf13ee21e5e`
+
+New Patches
+===========
+
+- Cycles: Optical Vignetting and Depth of Field light distribution
+  :diff:`2922`
+- VSE Scene Strip Render Engine Settings
+  :diff:`2924`
+- Proposed fix for some math_color_blend functions
+  :diff:`2925`
+- Select similar for bones by action group index
+  :diff:`2931`
+- Improving Video Sequencer performance with C++ and OpenCL
+  :task:`53374`
+
+Other Projects
+==============
+
+- Workspaces: Integrating Interaction Modes - Requirements
+  :task:`53388`
+- Workspaces: Integrating Interaction Modes - Proposals
+  :task:`T53389`
+
+
+Documentation
+=============
+
+- `Blender 2.8 -- priorities reconsideration proposal <https://lists.blender.org/pipermail/bf-committers/2017-November/048910.html>`__
