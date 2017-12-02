@@ -1,0 +1,124 @@
+
+***********************
+2017-12-02: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-12-02
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 9aece5e1e7748fa6020a3b6cbeabd17e1dc3bbaa..
+.. DIFF range: 2931..2937
+.. TASK range: 53389..53456
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- 5% speed improvement for subsurf modifier
+  :rev:`B1d33843ea6b128242183bb31804474019c606a9d`
+- Haiku OS Support
+  :rev:`B28d2148b09a2d975876f4418bd5ba15ab5edea8d`
+- Cycles: Improve denoising speed on GPUs with small tile sizes
+  :rev:`Bfa3d50af95fde76ef08590d2f86444f2f9fdca95`
+- Select similar for bones by group index
+  :rev:`B099a99dbc9c4f166bb29bd91ea1048eb35c663d5`
+- Cycles: add object level holdout property
+  :rev:`Be4b54f44c1b19069de5818d47ce899c690e9b56d`
+- Cycles: 1-2% speed improvement
+  :rev:`B7e349f27457a8348c73cc81a4c4b66b34e379c26`
+- PyAPI: add function to check any mathutils type
+  :rev:`Bc17c6557b4ea4bfeb4528b74703795798aedaa66`
+- PyAPI: Allow structs to define tags for their properties
+  :rev:`Bad625acda82281461267a3379c57ce76d54325a1`
+- PyAPI: PyC_Err_PrintWithFunc utility function
+  :rev:`B0b325ba201269b3c8aab6e61c70f15c1758737d8`
+- Speed up stabalization tracking by 50%
+  :rev:`Bbf5b931d641926dfec147fe50909443e3ba65bea`
+- Sequencer: Add option to render OpenGL preview with DoF
+  :rev:`B9b42b3e11462e96bf24970971ab181122c6b33df`
+- Speedup mask drawing by 5-10%
+  :rev:`B440aa2bf70468d630c1dc70c719aad67496a47d5`
+- Speedup mask rendering by 25%
+  :rev:`B06e64058dd687634b6bf873dbf21c6d3563ed6c9`
+- Speedup movie tracking by tracking 10-15%
+  :rev:`B440a49a24cb82fc78edfb6b2539d9ebd0f805a4c`
+- Speed up subdividing by 20%
+  :rev:`B2b6f3455584b3949045b517ce4759bcda70daf8a`
+- Improve edge rotate when edges share faces
+  :rev:`B329bf8e1bf0e9c74a7ef9426dcb237df9ac1287d`
+
+.. rubric:: cycles_texture_cache
+
+This branch adds a texture cache feature for rendering a large number
+of largely sized textures in a pre-defined modest memory footprint.
+
+See `This email <https://lists.blender.org/pipermail/bf-committers/2017-November/048938.html>`__ for more information.
+
+.. rubric:: cycles_embree
+
+This adds the `Embree <https://embree.github.io/>`__ raytracing kernels developed by Intel into Cycles.
+
+See `This email <https://lists.blender.org/pipermail/bf-committers/2017-November/048936.html>`__ for more information.
+
+.. rubric:: fluid-mantaflow
+
+- Split viscosity settings into base and exponent
+  :rev:`Bbc6ab0f0771e0a285b64fef8798d8f2aa91f0752`
+- Add settings for fluid diffusion (i.e. viscosity and surface tension)
+  :rev:`B02b271947e5bf0db62ee6b86f8d83920715b7a13`
+
+.. rubric:: blender2.8
+
+- Groups and collection: create group from collection
+  :rev:`Baeaf87bbeb011e9a571eefa12d81fa6fb2b8bd5b`
+- Groups and collection: initial integration
+  :rev:`Bbe9e469ead227aee8d4c29b98a125cf599c5c8bb`
+- ID static override: add basic support for overriding animation
+  :rev:`B75eb219a2e21abe9c9909d76f85abbb538d8ef9f`
+- ID static override: make basic object & bones transformations overridable
+  :rev:`B20ae4f928cecf78d5275c1226db87cb1ab22db50`
+- ID static override: make most Image properties overridable
+  :rev:`Bbde39e51100b89aa21d1cb99ab17000c977a19b6`
+- ID Static Override: add basic generic UI tools to control override of properties
+  :rev:`B0007873645149c022805a5f6668d48552148a813`
+- ID Static Override: add basic UI feedback
+  :rev:`Be36b5f004dc3792e0ef8bdde54b3f65653571e50`
+- Merge ID static override, part I: core changes in DNA, BKE and .blend read/write
+  :rev:`B39b8a3306830957132931c2966c3c3afff5cdfb3`
+
+.. rubric:: greasepencil-object
+
+- New Gauss bell curve preset
+  :rev:`B4cbd5933f782312f05753847804d3efd1ff6de00`
+- Implement new cuve for multiframe falloff
+  :rev:`Bc787419600f303b6d10fd7410a3f71eb260c3926`
+- GP Build Modifier - Layer Masking support
+  :rev:`Bf86f826f192c768ac4bd7002089a19061e6b86fb`
+- New Grease Pencil Offset modifier
+  :rev:`B0ecbe2171a074a5644cb1055ecaf93ab4b6773e9`
+- New VFX Flip modifier
+  :rev:`B2392dc82460bdc6a23679d0b3aa52b012d7b809d`
+- Dopesheet jump frame in active layer
+  :rev:`Bc29174eedf3d847f358919d0d4e6c8ccda2a2dd6`
+
+
+New Patches
+===========
+
+- Cycles: Re-enabled motion blur for object scaling
+  :diff:`2937`
+
+Other Projects
+==============
+
+- `Blender game transition <https://lists.blender.org/pipermail/bf-committers/2017-December/048939.html>`__
+
+Documentation
+=============
+
+Have a look at the 2.8 WIP release notes:
+https://wiki.blender.org/index.php/Dev:Ref/Release_Notes/2.80
