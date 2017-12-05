@@ -30,7 +30,7 @@ Changes to Blender
   :rev:`B759b50b20b96556f182e6d14ce23a89e2a673921`
 - Remove default 'Clear loc/rot/scale delta transform' shortcuts
   :rev:`B556b13f03e561b54d4f0186e207f080c786f8b66`
-- Fix AMD Threadripper rendering performance issues.
+- Fix AMD Thread-Ripper rendering performance issues.
   :rev:`B55696b56d98411b6eeadfa1a7349bdb2bca47e38`
 - Cycles: Make per-object random value output also work for Lamps
   :rev:`B212a8d9e5ae78a30ed4c35161d91eeca35eaa41f`
@@ -66,7 +66,7 @@ Changes to Blender
   :rev:`B5819ab66fabbb86fed31dff6417401ae9ee2b254`
 - Cleanup UI and unused fields
   :rev:`B330febba5a547ef1238dfb51c0ea1d8905eaf374`
-- New Smooth modifer
+- New Smooth modifier
   :rev:`B8b97a539aa5bb62d65e6a3505600df80253e09ea`
 - Remove smooth lower limit
   :rev:`B541d7415bfd8006b8bcc9763f090b624106df4e8`

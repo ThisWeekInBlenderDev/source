@@ -34,9 +34,7 @@ Changes to Blender
   :rev:`Bc17c6557b4ea4bfeb4528b74703795798aedaa66`
 - PyAPI: Allow structs to define tags for their properties
   :rev:`Bad625acda82281461267a3379c57ce76d54325a1`
-- PyAPI: PyC_Err_PrintWithFunc utility function
-  :rev:`B0b325ba201269b3c8aab6e61c70f15c1758737d8`
-- Speed up stabalization tracking by 50%
+- Speed up stabilization tracking by 50%
   :rev:`Bbf5b931d641926dfec147fe50909443e3ba65bea`
 - Sequencer: Add option to render OpenGL preview with DoF
   :rev:`B9b42b3e11462e96bf24970971ab181122c6b33df`
