@@ -1,0 +1,91 @@
+
+***********************
+2017-12-16: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-12-16
+   :hide:
+
+Sorry for missing the post last week there was not much development
+so I decided to skip a week and include that content in today's report.
+Also, due to the holidays there will likly not be a report next week either.
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 5b6cfa705cb180d042f6f27e45331c12972be7ae..aacada54f83de91c01495003c4614a956c15f3f9
+.. DIFF range: 2937..2965
+.. TASK range: 53456..53563
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Add eyedropper to color-ramp widget
+  :rev:`B7ae4c3a01923cccfa372072b880507c58557f45a`
+- Modelling: Better bevel profile at extreme values of profile
+  :rev:`Bbdc15061fc5cf0c0c9bd075894b3a475e482248e`
+- Modelling: Array Modifier: option to offset UV's
+  :rev:`B6d31eb015c6a3f6c3ff2a998fc52416c25c4e5b6`
+ 
+.. rubric:: blender2.8
+
+- Manipulators: view3d navigation buttons
+  :rev:`B468ac9031765681cde42e9132d16c799158e7aba`
+- Group collections: viewport/render options and remove collection visibility
+  :rev:`B1f5106de610b115b87ab6121d7871d447ca48cd2`
+- PyAPI: Message bus replacement for property notifiers
+  :rev:`B7a8ac1b09b1cf321f259b8eb9b832424d2c7bf5b`
+- Eevee: Add Irradiance Visibility
+  :rev:`B5b6cfa705cb180d042f6f27e45331c12972be7ae`
+
+.. rubric:: greasepencil-object
+
+- New Eraser with Lasso select
+  :rev:`Bc4dbe9448cbe2f45494e120fb674a85a5f637151`
+- Add Erase stroke with Ctrl key
+  :rev:`Bfa2cd280ac8c5b3acc22db1fed569eca3ad1995f`
+- Add new option to simplify alternate points
+  :rev:`B740506c7af8eee191d05fe5f77adb45d39ca54be`
+- New Normalize thickness parameter
+  :rev:`Bc4e595aaf32e1731b40d4ee1b25887659b1631eb`
+- New Vertex Group menu with Ctrl+G in Edit mode
+  :rev:`Bfc385754613b12942e16f328f1713ac2e3018e5e`
+- Add default grey color with fill to default Palette
+  :rev:`B7335e09129343d3e8594848f2eec53eb5d0b01ab`
+- New Draw Specials menu with X key
+  :rev:`B568f55e3cc323404bf9361fb5073d99315c98620`
+- Change default onion mode to keyframes
+  :rev:`B9c350fa98f8b5f02e1e77a93c3ec644f049b711c`
+- New VFX light modifier
+  :rev:`Ba3930268e147e9e190e303d23a53d0afabe8fb02`
+
+
+New Patches
+===========
+
+- Cycles: Compile "specialized" shader graphs for transparent shadows and emission
+  :diff:`2938`
+- Cycles: Split kernel reduce recompiles
+  :diff:`3939`
+- Use OIIO for loading DPX files
+  :diff:`2944`
+- Cycles: Vector Math node adding multiply and dividing
+  :diff:`2956`
+- Possible solution for workspace mode
+  :diff:`2965`
+
+Other Projects
+==============
+
+- Static Override (main task)
+  :task:`53500`
+- Static Override (UI & UX)
+  :task:`53501`
+
+Documentation
+=============
+
+Again, have a look at the 2.8 WIP release notes:
+https://wiki.blender.org/index.php/Dev:Ref/Release_Notes/2.80
