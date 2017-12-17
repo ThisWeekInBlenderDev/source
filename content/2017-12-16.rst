@@ -32,6 +32,7 @@ Changes to Blender
 .. rubric:: blender2.8
 
 - Manipulators: view3d navigation buttons
+  `(see video) <https://www.youtube.com/watch?v=Vy0NDM2URro>`__
   :rev:`B468ac9031765681cde42e9132d16c799158e7aba`
 - Group collections: viewport/render options and remove collection visibility
   :rev:`B1f5106de610b115b87ab6121d7871d447ca48cd2`
