@@ -9,7 +9,7 @@ all: FORCE
 	@echo " xdg-open \"$(BUILDDIR)/html/index.html\""
 
 clean: FORCE
-	rm -rf "$(BUILDDIR)/html" "$(BUILDDIR)/latex"
+	rm -rf "$(BUILDDIR)/html"
 
 upload: all FORCE
 	if [ -d "docs/.git" ]; then \
