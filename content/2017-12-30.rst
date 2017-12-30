@@ -1,0 +1,89 @@
+
+***********************
+2017-12-30: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-12-30
+   :hide:
+
+Again, sorry for missing last weeks report but due to the
+holidays last week has been included in this report.
+Next week will be back to normal.
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: aacada54f83de91c01495003c4614a956c15f3f9..42573e00a50ca7a7491a79293cfd59e1814df0f5
+.. DIFF range: 2965..2980
+.. TASK range: 53563..53665
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Fix scalability issue in threaded code of Mesh normals computation (Slight speedup)
+  :rev:`Bd130c66db436b1fccbbde040839bc4cb5ddaacd2`
+- Subsurf: Avoid global lock for loops and orig index layers (4x speed up)
+  :rev:`Bdf0ecd73af9218608b5436761d6a298cb4985709`
+ 
+.. rubric:: blender2.8
+
+- Outliner/Collection: Interface for Master Collection Tree
+  :rev:`Bbbbdb27d658d7bad950376d12edee126c59f3628`
+- Outliner/Collection: Operator to delete selected collections
+  :rev:`B4d08ef822ce291744d40e0fef47975e7f61826e8`
+- Outliner/Collection: Operator to create (nested) collections
+  :rev:`B8252a414d8cb15b42726d6f96d01cae97514d793`
+- Collections: Allow collections from different "parents" to have the same name
+  :rev:`Bc9cb5dc3dab0af76f4b6090b6f6f1f4741ce98eb`
+- Collection: Name collection based on parent's name
+  :rev:`Bc08dac000ff3ca3597c82740c724f63f024ab542`
+- Implement duplicator viewport/render visibility options
+  :rev:`Bb89f2276e502da6480b4ceeb414b0e6b79e4edfe`
+
+.. rubric:: greasepencil-object
+
+- New duplicate frame operator and special men
+  :rev:`B919cdad3e4911a5164fa50f7ab07e9711186bed6`
+- New rounded end caps
+  :rev:`B95dcd183fe8e8335c016a71ce905ed97a73ebf81`
+
+.. rubric:: fracture_modifier
+
+- Remesh modifier: support remeshing particle systems
+  :rev:`B4945003ffd521426c27381bcb3c15f6714878074`
+- Add acceleration maps which should be also be usable in playback
+  :rev:`B16f161e5f61993a9aa8d64ec83880dc48ca13310`
+- Remesh modifier: support remeshing metaballs
+  :rev:`Bdf7d0e5423ee6ee95f676e97042d32b7920f6851`
+- Add "self collision" option for constraint islands, and randomize option for sphere shape radius and margin 
+  :rev:`B7babce30529a0fd9e21b963e836a888d44cf947d`
+- Add option to only output verts, meta threshold max is 100 now
+  :rev:`B1010cdf421ec32f4ea07418a1ef8e272bb764534`
+- Add option to only output centroids as vertices
+  :rev:`Be8958954ba19c282c737589b98f4c0cfb3758762`
+- Add grid fracture option
+  :rev:`Bfa7a666e2be387a3d887204909d6c3c378929614`
+
+New Patches
+===========
+
+- Cycles: Allow for multi-gigapixel renders
+  :diff:`2975`
+- Allow loop cut placement with mouse after numeric input
+  :diff:`2973`
+- Viewport HMD integration using OpenVR
+  :diff:`2970`
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- `Blender 2.8 Xmas Report <https://code.blender.org/2017/12/blender-2-8-xmas-report/>`__
+- `Drawing 2D Animation in Blender 2.8 <https://code.blender.org/2017/12/drawing-2d-animation-in-blender-2-8/>`__
+- `2.8 WIP release notes <https://wiki.blender.org/index.php/Dev:Ref/Release_Notes/2.80>`__
