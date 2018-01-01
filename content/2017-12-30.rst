@@ -44,7 +44,7 @@ Changes to Blender
 
 .. rubric:: greasepencil-object
 
-- New duplicate frame operator and special men
+- New duplicate frame operator and special menu
   :rev:`B919cdad3e4911a5164fa50f7ab07e9711186bed6`
 - New rounded end caps
   :rev:`B95dcd183fe8e8335c016a71ce905ed97a73ebf81`
