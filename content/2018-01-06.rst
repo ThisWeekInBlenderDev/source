@@ -1,0 +1,85 @@
+
+***********************
+2017-12-30: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2017-12-30
+   :hide:
+
+Again, sorry for missing last weeks report but due to the
+holidays last week has been included in this report.
+Next week will be back to normal.
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 42573e00a50ca7a7491a79293cfd59e1814df0f5..33b0d64b24486a4e521d15e2092cb35bbaa3b218
+.. DIFF range: 2980..
+.. TASK range: 53665..
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: CUDA support for rendering scenes that don't fit on GPU
+  :rev:`Bc621832d3d358cd7648d60c16e1685050c4f6778`
+ 
+.. rubric:: blender2.8
+
+- Outliner: Support multiple-objects drag'n'drop into collections
+  :rev:`Bfb4cd136a7cf94f2fda2d3a2c8fb01d73eb878cb`
+- Outliner/Collections: Add remove selected objects operator
+  :rev:`B10f0635d326e561dfea2675cdd5465ca3b861f24`
+- Outliner/Collections: Add selected objects operator
+  :rev:`Beaf559d52aa56faf4f1d76781ac4fc75ca31119e`
+- Outliner: Right mouse menu for collections editing
+  :rev:`Bd9b4d6ee5a4cb231070a0bcb5ac1e7b8c9c7f2f7`
+- Outliner: Master Collection is always expanded
+  :rev:`Ba9fe94245b9727858f9175c302196a7c722f9181`
+
+.. rubric:: greasepencil-object
+
+- Add new simplify fixed operator
+  :rev:`Babdce7f6acbce17f338f837a2ecf360b4801949b`
+- New option to fill using colors without fill
+  :rev:`B2b0c317fb2fb38fd0dd5e794ceb2e2be14f57743`
+- Add simplify level
+  :rev:`B96e33c428e1e8efada517083be96b1b6a4077b6d`
+- Make boundary lines display optiona
+  :rev:`889a0707c19ac9c8e7912f0dda4d65d8a0e62ad8`
+- Use a brush for filling
+  :rev:`Bb26307991bd0adab1b7561a3fb1973f36ca7747e`
+- New reprojection mode: Axis
+  :rev:`Bb3848230b3bc8023442ce74caa62f117809e1aaa`
+
+.. rubric:: fracture_modifier
+
+- deform motionblur support for FM and remesher with variable topology
+  :rev:`B054d6d7ac3805b0c6d64fb41f461107950bc76d9`
+
+New Patches
+===========
+
+- Add Cubic B-Spline with Prefilter Algorithm
+  :diff:`2984`
+- Support for UVs generated for Curves, Surfaces and Texts
+  :diff:`2986`
+- Nodes: Display image name if any in the Image node title
+  :diff:`2988`
+- Add deformation axis selection to the Simple Deform modifier
+  :diff:`2989`
+- Curve Edit Mode: support for curve handle-type theme colors
+  :diff:`2990`
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- `Blender 2.8 Xmas Report <https://code.blender.org/2017/12/blender-2-8-xmas-report/>`__
+- `Drawing 2D Animation in Blender 2.8 <https://code.blender.org/2017/12/drawing-2d-animation-in-blender-2-8/>`__
+- `2.8 WIP release notes <https://wiki.blender.org/index.php/Dev:Ref/Release_Notes/2.80>`__
