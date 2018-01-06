@@ -14,8 +14,8 @@ Next week will be back to normal.
 .. include:: /include_intro.rst
 
 .. SHA1 range: 42573e00a50ca7a7491a79293cfd59e1814df0f5..33b0d64b24486a4e521d15e2092cb35bbaa3b218
-.. DIFF range: 2980..
-.. TASK range: 53665..
+.. DIFF range: 2980..2990
+.. TASK range: 53665..53704
 
 Changes to Blender
 ==================
