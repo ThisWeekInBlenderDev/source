@@ -46,8 +46,8 @@ Changes to Blender
   :rev:`B2b0c317fb2fb38fd0dd5e794ceb2e2be14f57743`
 - Add simplify level
   :rev:`B96e33c428e1e8efada517083be96b1b6a4077b6d`
-- Make boundary lines display optiona
-  :rev:`889a0707c19ac9c8e7912f0dda4d65d8a0e62ad8`
+- Make boundary lines display optional
+  :rev:`B889a0707c19ac9c8e7912f0dda4d65d8a0e62ad8`
 - Use a brush for filling
   :rev:`Bb26307991bd0adab1b7561a3fb1973f36ca7747e`
 - New reprojection mode: Axis
@@ -55,7 +55,7 @@ Changes to Blender
 
 .. rubric:: fracture_modifier
 
-- deform motionblur support for FM and remesher with variable topology
+- Deform motionblur support for FM and remesher with variable topology
   :rev:`B054d6d7ac3805b0c6d64fb41f461107950bc76d9`
 
 New Patches
