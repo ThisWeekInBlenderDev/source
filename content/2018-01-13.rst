@@ -1,0 +1,87 @@
+
+***********************
+2018-01-13: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-01-13
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 33b0d64b24486a4e521d15e2092cb35bbaa3b218..824c039230e04c441d2aaece28cd423c55c3ccf7
+.. DIFF range: 2990..2997
+.. TASK range: 53704..53773
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: adaptive subdivision support for panoramic cameras
+  :rev:`B5bd9b12dc47d6fcfb21025101b41802bb5b2edc0`
+- User Prefs: app-template option to hide the cursor
+  :rev:`B93d30d62e6e46b0eb852c86053d9529495050c5d`
+- User Prefs: add new flag for app-template options
+  :rev:`Bff4c9d69ee4bf1764b6f4effa487e29e6c4ab985`
+- Cycles: option to make background visible through glass transparent
+  :rev:`B322f0223d04ac36ecc72cd01c371234da6de643c`
+- Cycles: add offscreen dicing scale and dicing camera
+  :rev:`Bcce280dd6767bb4588a301f2b966d1b959b01f6b`
+- Modifiers: Speed up Multires 8.7ms --> 2.7ms
+  :rev:`B6695e390c627adbe664e499f699d66966b854007`
+- Modifiers: Speed up Multires 4.5ms --> 1.4ms
+  :rev:`B90cd856ac34011496031eeae5a5e3a5bf2da1107`
+- Modifiers: Speedup Subsurf 40% speedup
+  :rev:`Bc276fef4132557118a3bcba38220e02bf4f9f1b4`
+- UI: option not to show screen splitting widgets
+  :rev:`B717090f40e1aa12be26522df350d01a50d7b6316`
+- Cycles: support animated object scale in motion blur
+  :rev:`B25b794a39d8cff87b6df2338d020e8d4ba90eeef`
+- Modifiers: Add deform axis for Simple Deform
+  :rev:`B6554207841a452cc58857232837740746a1e8b80`
+- Nodes: Display image name if any in the Image and Texture Image node title
+  :rev:`B87607254d6d3f9ca5ebbc696a4066bf0c8fbbed4`
+
+.. rubric:: blender2.8
+
+- Eevee: Lamps: Optimize lamps CPU/Memory usage
+  :rev:`B0142264508925ddc02a67d5f65759ca24bafa387`
+- Curve/Surface Display: UV support
+  :rev:`B3c6e19b30b4f2c9cf4809dfcd50097d3aeda3998`
+- Curve Edit Mode: Use curve handle theme colors
+  :rev:`B375d27f230e41e4bcb53183082739c580f74c709`
+
+.. rubric:: greasepencil-object
+
+- Add Ctrl keymap while fill for free drawing
+  :rev:`Bcefa6ca48232fd5d7e2374cc0cb886636df84d26`
+- New Weight Smooth operator
+  :rev:`B807c7b7819b794c1554a3f8f4284b6d39e084e2e`
+- Include Thickness of new Fill Stroke
+  :rev:`B40229d2ab9056eac29c579f21fe5f5bb25509e5e`
+- New Weight Invert operator
+  :rev:`B0562da81669790363da629e9a92faa25ddff1e06`
+
+.. rubric:: fracture_modifier
+
+- Experimental bind of animated vertices (other object) to shards
+  :rev:`B2a41da1d915215ea5e0a080caf9813872bf57e8d`
+
+New Patches
+===========
+
+- Outliner filter system -- objects
+  :diff:`2992`
+- Support canceling color-ramp editing with the Escape key
+  :diff:`2997`
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- Youtube: `Outliner Filter: Blender 2.8 Development <https://www.youtube.com/watch?v=9Vz8UTLD0Q8>`__
