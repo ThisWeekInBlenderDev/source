@@ -1,0 +1,82 @@
+
+***********************
+2018-01-20: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-01-20
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 824c039230e04c441d2aaece28cd423c55c3ccf7..bbd71c879e298edc2c13327235a6f5b4532663cb
+.. DIFF range: 2997..3013
+.. TASK range: 53773..53845
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Loop Cut: Allow mouse placement w/ numeric input
+  :rev:`B235f578a0d21191cf4914652e8cfc5608fc1e218`
+- Add "Delete Invalid Drivers" operator
+  :rev:`Bc38ebf93e356a97b3013b075e1d98268df891809`
+- Sculpting: Sdd an option to hide mask in viewport
+  :rev:`B4d8b78b0a9b760bba2f715a7421b3fdd5e076ccf`
+
+.. rubric:: blender2.8
+
+- Outliner: Get rid of Search Menu
+  :rev:`B51bcf7bd5f3f21e0ff38b04965cc8413c339b3cf`
+- Outliner: Remove User Preferences
+  :rev:`Befe1af3d11a930b539718cc566049f07316427ff`
+- Outliner Filtering System
+  :rev:`B37913cf5326a732cb94c28f96c1deb8f3965c846`
+- Eevee: Implement Sun area lighting
+  :rev:`B03e432bcdbd61ccea2d74065203af199b46b2e83`
+- Outliner: Alphabetical sorting
+  :rev:`B60eb897fa5f8d3683211d5416178b99231ef9166`
+- Outliner: Rename "Active View Layer" > "View Layer"
+  :rev:`B74f872df3a0d45cba58540f240101ce4724f11d0`
+- Outliner: View Layer: add option to add a new collection to the current view layer
+  :rev:`B33ddd926b769fca68bc485312ca9def847847b87`
+- Eevee: AO: Removes samples and denoise options
+  :rev:`B9fd28c776938fe420782a6339e9da7c619724dae`
+- Eevee: SSR: Remove ray count
+  :rev:`B3cb2b2956b140b840ba8a481ad15df1b567d9c07`
+- Deps Graph: Get rid of legacy extra recalc flags
+  :rev:`Bbf9460e3cf7a26fd939ec0e80f86bb3cebf7a71e`
+
+.. rubric:: greasepencil-object
+
+- Remove simplify render options
+  :rev:`Bb0c08068e867ea15ca50739ee7258a7cff8b583e`
+- New operator to clean boundary strokes
+  :rev:`Bd1f89c93628489c9e8ae9fbd25405ec75fb9701a`
+
+.. rubric:: fracture_modifier
+
+- UI: move animated mesh settings to new panel
+  :rev:`B80671518ebc0d832ecefb2205fe143d06432e98b`
+
+New Patches
+===========
+
+- Sample based compositor
+  :diff:`3003`
+- Update image library dependencies to latest versions, fixing vulnerabilities
+  :diff:`3005`
+
+Other Projects
+==============
+
+- Blender 2.8: Icons
+  :task:`53840`
+- Blender 2.8: Collections Icons
+  :task:`53844`
+
+Documentation
+=============
+
+- None
