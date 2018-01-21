@@ -22,7 +22,7 @@ Changes to Blender
   :rev:`B235f578a0d21191cf4914652e8cfc5608fc1e218`
 - Add "Delete Invalid Drivers" operator
   :rev:`Bc38ebf93e356a97b3013b075e1d98268df891809`
-- Sculpting: Sdd an option to hide mask in viewport
+- Sculpting: Add an option to hide mask in viewport
   :rev:`B4d8b78b0a9b760bba2f715a7421b3fdd5e076ccf`
 
 .. rubric:: blender2.8
