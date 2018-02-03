@@ -1,10 +1,10 @@
 
 ***********************
-2018-01-20: Weekly News
+2018-02-03: Weekly News
 ***********************
 
 .. feed-entry::
-   :date: 2018-01-20
+   :date: 2018-02-03
    :hide:
 
 .. include:: /include_intro.rst
