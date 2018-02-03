@@ -1,0 +1,95 @@
+
+***********************
+2018-01-20: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-01-20
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: bbd71c879e298edc2c13327235a6f5b4532663cb..cb72b906d8f2525ecb7fbe1160ff641e64a36780
+.. DIFF range: 3013..3037
+.. TASK range: 53845..53993
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: add Vector Displacement node and extend Displacement node
+  :rev:`Bf9ea097a872290d20cd94504adb3172165cb770d`
+- Apply Pose as Rest Pose: Bendy Bone support
+  :rev:`B5dd5286995e4a924c1a04df812050bf15b980ac2`
+- Cycles: rename displacement methods, default to displace
+  :rev:`Bda4c3f30d984b361d7c00b103ec329d5263779ff`
+- Cycles: add Displacement node.
+  :rev:`B4a5ee1a5a2adc8032cf710357081d3a1e3fcad95`
+
+.. rubric:: blender2.8
+
+- Eevee: Render: Add ambient occlusion pass support
+  :rev:`B36b259fa889afebce390f98862ea243e617aa989`
+- Collections: Operator to duplicate a collection
+  :rev:`Bc7c070c2ece0f41772cbcfe3445f3e0be684dd1d`
+- Collections: Operator to select collection objects
+  :rev:`Ba4d2b102f313b8d427e6ff6066f38cc3a2394628`
+- Eevee: Render: Add support for multiview
+  :rev:`B00f1bc168505bcffe150f5f75db79778bdead51e`
+- Eevee: Add mist pass support
+  :rev:`Be52c5bcdb56886a10a8aa432c240f2f74dc7c0a5`
+- Eevee: Render: Add Transparent Background option
+  :rev:`Bab5f86a04e1cbc7105ae50836abb74524516e976`
+- Eevee: Render: Add Subsurface Pass support
+  :rev:`B253b412acefc6abe9c221a4886e153739c4f50f4`
+- Eevee: Render: Add Normal pass output
+  :rev:`B55a238edd605812c3cd33b1bf1275dff85771b5e`
+- Eevee: Add Z pass render result
+  :rev:`B376d42304b716da2f9bda8b55c539d39ac416281`
+- Eevee: Add new "render samples" properties
+  :rev:`B8cce33913162b44bfbfca523f30d546bf956fd52`
+- Eevee: Add support for TAA/SuperSampling for final render
+  :rev:`Bf107af351988ab93aeccad33b1d09b536844c05c`
+- Eevee: Probes: Add support for intensity tweak
+  :rev:`B777e1d358a3af5bb774d13ec0f03c233593f68e7`
+
+.. rubric:: greasepencil-object
+
+- New Split operator
+  :rev:`Bd7a366930409ab59c69c645ceded358af15fc8aa`
+- New option to separate Points
+  :rev:`B27e3b782e4af6ceed448c045cd6804d888070f8f`
+- New Separate operator
+  :rev:`Be5989702ee047a1d228e9de3334e28cbff615605`
+- New Lazy Mouse option
+  :rev:`Be44fa493107d69741f9c76d5b643c03478067597`
+- Add option to reproject fill on Surface
+  :rev:`Bfa4c1ad525c86b8df40b7a33b552c6d4999b85a3`
+
+.. rubric:: fracture_modifier
+
+- Add a limit / search radius for animated mesh binding
+  :rev:`Bd68f53a3f3f48a040d74aaf90bda3f6e63d6b9e5`
+
+
+New Patches
+===========
+
+- Initial move of Object.mode to workspace
+  :diff:`3037`
+- Asset Engine
+  :diff:`3035`
+- Cycles: add Principled Volume shader
+  :diff:`3033`
+
+Other Projects
+==============
+
+- Blender 2.8: Icons
+  :task:`53840`
+
+Documentation
+=============
+
+- None
