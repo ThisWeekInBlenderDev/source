@@ -1,0 +1,56 @@
+
+***********************
+2018-02-10: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-02-10
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: cb72b906d8f2525ecb7fbe1160ff641e64a36780..a596d5df05df19956d0be037920ef4c85df7e55a
+.. DIFF range: 3037..3057
+.. TASK range: 53993..54047
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: add random walk subsurface scattering to Principled BSDF
+  :rev:`Ba6968e87f1338081f30725f8f2ca3460e280fea2`
+- Cycles: random walk subsurface scattering
+  :rev:`B0df9b2c71517a98760a5e577f434d9d86e4e1910`
+- Mesh: Remove Carve boolean
+  :rev:`Be0597baed57fa7a9dfaf6dff6d0fa120784d21ea`
+- Dopesheet: Synchronize selection on bones when selecting everything
+  :rev:`B5f2b4002f49b08f68b1e37b267eceb0b340af713`
+
+.. rubric:: blender2.8
+
+- Outliner: Add object(s) to new collection
+  :rev:`B77b61b554ca10353b408645e3316e06c8d240388`
+- Outliner: Operator to delete outliner selected elements from collection
+  :rev:`B9631c1ac1a8ef2e491310778853b912595e6f3ee`
+- Eevee: Pixel Filter: Add parameter & rescale final LUT
+  :rev:`B23d2f708f312b73186aff4a42e952480413e7096`
+
+
+New Patches
+===========
+
+- Snap to second while scrubbing the frame in the timeline
+  :diff:`3056`
+- Cycles volume : fast empty space optimization by generating a tight mesh around the volume.
+  :diff:`3038`
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- None
