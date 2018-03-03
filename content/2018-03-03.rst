@@ -1,0 +1,97 @@
+
+***********************
+2018-03-03: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-03-03
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 2eaf90b305fc6fb37f775f288c3d5cd34cc66c81..7c466e16992849c7b2906459f4e00fe091d39430
+.. DIFF range: 3067..3094
+.. TASK range: 54092..54222
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles volume: fast empty space optimization (up to 2x speedup)
+  :rev:`B7377d411b47d50cd943cd33e3e55c0409bb79f91`
+- Collada: Adding support for Matrix Transformation export
+  :rev:`Ba024da55af09fb75e3b72489a8696878909bf676`
+- Smoke: expose empty space clipping property to the UI
+  :rev:`B4403ca80bda690c0ac44e4a6db0cddf4b2428006`
+- Cycles: add Principled Volume shader.
+  :rev:`B0aec2dcd3ae0ed382ffe7b3311a4e30fc88398e4`
+- Cycles: Speedup rendering of dense volumes (30% speedup)
+  :rev:`B5d5c6bb5efee9bd03004845f9b1eee9d43883525`
+- Animation: When scaling keyframes, merge (by-averaging) selected keys that end up on the same frame
+  :rev:`Bac717928ad027b3a048e6aba7e4f64e4a617d8cc`
+
+.. rubric blender2.8
+
+- WorkSpace: show/hide opt-out support for add-ons
+  :rev:`B61c8ed40f5df897da212b55dadeee252c8d3997b`
+- WorkSpace: UI filtering for add-ons
+  :rev:`Bd937d06c02f62c11385c1c1f58d963fec03365d9`
+- Cycles: add back point density texture support
+  :rev:`B000002e42df54b00009fe1d2341d27d8cc418925`
+- EEVEE: Compositing and rendering of multi-layers support
+  :rev:`B06420c5fe8fda54c543f26f9d95d2c6fcf5161cd`
+- Viewport: Speed up many unique objects (up to 3x speedup)
+  :rev:`B241c90c92d8dfc4f98daad71fb75390793777a86`
+- Eevee: add Principled Volume shader
+  :rev:`B38ccd1fe33e61a6d609273dd87d3a4c69d62f368`
+- WorkSpace: object-mode switching support
+  :rev:`B4ab002bca36ace4d2b4b21efce622a682b99b844`
+- Viewport: Small speedup.
+  :rev:`Bc5eba46d7f4ddfcdf372a3f4968e4d170ee0a002`
+
+.. rubric:: greasepencil-object
+
+- New Eraser brush
+  :rev:`B32c4bc3417a247609ef8875c03c0b7153e224878`
+- New Draw mode "Boxes"
+  :rev:`B5a37f69467ac06d2d1bb78553b9901c984d17422`
+- Interpolate mouse movement for fast drawing
+  :rev:`Ba636f3fbd148daa6aa05a0b276faa260738b446f`
+- Add UV rotation option to Smooth and Noise modifiers
+  :rev:`B803f80c673fd8c4794e354e7693113f476bb0553`
+- Apply Smooth and Random sculpt to UV rotation
+  :rev:`B71f0e59b2e348c7376b5ec9e92c783c7def3b0ec`
+- New UI parameter to define UV rotation randomness
+  :rev:`B11910fdb505b97732b0aa96c56a2eef617f1b986`
+- New point fields for UV data
+  :rev:`Bf0419a4a2a4237e5a5a807c918923a49dbb0f890`
+
+.. rubric:: fracture_modifier
+
+- Add vertex group to influence metaball radii
+  :rev:`Bc381b3fadc3788492adb7786d8f4031ffba8ee71`
+- Optionally restore old activation behavior with broken constraints
+  :rev:`Bfb8acd8b33310919c38cb1e208fdbdb9dc655d27`
+
+New Patches
+===========
+
+- Freestyle: work in progress patch to show possible integration
+  :diff:`3086`
+- First steps for a User-Preferences/Settings redesign
+  :diff:`3088`
+- Array modifier: Do not merge vertex groups with different names
+  :diff:`3092`
+- Cycles: add anisotropy to random walk subsurface scattering.
+  :diff:`3094`
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- `EEVEE FAQ <https://code.blender.org/2018/03/eevee-f-a-q/>`__
