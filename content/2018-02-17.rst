@@ -18,7 +18,7 @@ Changes to Blender
 
 .. rubric:: master
 
-- Cycles: Remove Fermi support 
+- Cycles: Remove Fermi support
   :rev:`B2eaf90b305fc6fb37f775f288c3d5cd34cc66c81`
 - Simple hair children: Make twist affected by texture
   :rev:`B6d4022f61980ba46efd391dcfe96dd88a8db8deb`
@@ -28,7 +28,7 @@ Changes to Blender
   :rev:`Bffde74a878882618ab4d4179ba8dd9b98aab15e2`
 - Cycles: Implement index output for hair node
   :rev:`B37f65e9dc4bcfa5225a114feabac753e342bb201`
-- :Nodes: Display image name if any in the Cycles Image and Environment Texture node title
+- Nodes: Display image name if any in the Cycles Image and Environment Texture node title
   :rev:`Bd640ce40aa9e472613cac22ecbc7655db9c27201`
 
 .. rubric:: fracture_modifier
@@ -37,7 +37,7 @@ Changes to Blender
   :rev:`B97a677e78861dba623b49fb72ef4e46e665d057f`
 - External constraints support
   :rev:`B4eb44b86100be814ed2a21699435cf76cc5e1600`
-  
+
 
 New Patches
 ===========

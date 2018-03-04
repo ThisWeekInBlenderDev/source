@@ -15,12 +15,6 @@ Weeks
 
    /*-*-*
 
-.. toctree::
-   :hidden:
-   :glob:
-
-   /this_week/*-*-*
-
 .. newsfeed extension expands content, use hidden toctree.
 
 .. toctree::
