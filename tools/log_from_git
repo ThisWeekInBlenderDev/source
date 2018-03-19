@@ -31,6 +31,13 @@ def plain_text_to_rst(body):
     return body
 
 
+def ignore_cleanup_commit(c):
+    subject = c.subject.lower()
+    if subject.startswith(('cleanup:', 'code cleanup:', 'code refactor:')):
+        return True
+    return False
+
+
 def rst_write_commit(
         fw, c, *,
         use_author=False,
@@ -98,6 +105,12 @@ def argparse_create():
         required=False,
         help='Fileneme to write to (instead of default output name)',
     )
+    parser.add_argument(
+        '--ignore-cleanup', dest='ignore_cleanup',
+        action='store_true',
+        required=False,
+        help='Ignore cleanup & refactor commits',
+    )
     return parser
 
 
@@ -106,6 +119,7 @@ def rst_write_log(
         output=None,
         range_sha1=None,
         author=None,
+        ignore_cleanup=False,
         extra_args=(),
 ):
     print('{} ...'.format(output))
@@ -121,6 +135,8 @@ def rst_write_log(
             commit_iter = GitCommitIter(source_dir, range_sha1 or 'HEAD', extra_args=extra_args)
 
         for c in commit_iter:
+            if ignore_cleanup and ignore_cleanup_commit(c):
+                continue
             if author is None or author == c.author:
                 rst_write_commit(fw, c, use_author=author is None, use_date=True)
 
@@ -128,6 +144,7 @@ def rst_write_log(
 def rst_write_log_by_weeks(
         source_dir, *,
         range_sha1=None,
+        ignore_cleanup=False,
         extra_args=(),
 ):
     from datetime import timedelta
@@ -157,7 +174,9 @@ def rst_write_log_by_weeks(
             fw(len(title) * '=' + '\n\n')
             week_start_prev = week_start
 
-        rst_write_commit(fw, c, use_author=True)
+        if ignore_cleanup and ignore_cleanup_commit(c):
+            continue
+        rst_write_commit(fw, c, use_author=True, use_date=True)
 
 
 def main():
@@ -173,6 +192,7 @@ def main():
             output=args.output or 'log.rst',
             range_sha1=args.range_sha1,
             author=args.author,
+            ignore_cleanup=args.ignore_cleanup,
             extra_args=extra_args,
         )
     else:
@@ -180,6 +200,7 @@ def main():
         rst_write_log_by_weeks(
             args.source_dir,
             range_sha1=args.range_sha1,
+            ignore_cleanup=args.ignore_cleanup,
             extra_args=extra_args,
         )
 
