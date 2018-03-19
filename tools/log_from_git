@@ -111,7 +111,7 @@ def rst_write_log(
         extra_args=(),
 ):
     print('{} ...'.format(output))
-    with open(output, 'w') as fh:
+    with open(output, 'w', encoding='utf-8') as fh:
         fw = fh.write
         if range_sha1 and (',' in range_sha1):
             commit_iter = (
@@ -150,7 +150,7 @@ def rst_write_log_by_weeks(
             week_text = week_start_date.strftime('%Y-%m-%d')
             if fh is not None:
                 fh.close()
-            fh = open(week_text + '.rst', 'w')
+            fh = open(week_text + '.rst', 'w', encoding='utf-8')
             print('{}.rst ...'.format(week_text))
             fw = fh.write
 
