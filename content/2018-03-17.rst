@@ -1,0 +1,53 @@
+
+***********************
+2018-03-17: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-03-17
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 23ccf5767fea1d7f1b50405334249b1a7a69d5c9..07c90f3a73f4826600f45847a43d0c61279020ec (master)
+.. SHA1 range: f3161bd2abe4bcc41f0e9169275be315ecc6b054..4a3d94c0734d1475aa9a2fbe89039fbc59c9fb8d (blender2.8)
+.. DIFF range: 3099..3108
+.. TASK range: 54365..54365
+
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- GHOST: Support Unity taskbar progress API
+  :rev:`B41149ca134ff1ffe1029e3eebf1c6b3e95ef4422`
+
+
+.. rubric:: blender2.8
+
+- UV/Image Editor: Optimize UV Drawing
+  :rev:`Bcca1e1b707c2d34244d3da87efcd78775c4eb048`
+- Clay: Refactor: Port clay to a deferred pipeline
+  :rev:`Bb4209b138f6bda863009568bf8dc19eb5cf8361c`
+- Eevee: Render: Allow cancel during probe update
+  :rev:`B266cdf955ebe01a66e6ccb791d3943323bcbb94d`
+
+
+New Patches
+===========
+
+- Proof of concept multi-object edit-mode
+  :diff:`3101`
+- Denoising Baking Results
+  :diff:`3099`
+
+Other Projects
+==============
+
+- None
+
+Documentation
+=============
+
+- None

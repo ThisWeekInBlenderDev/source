@@ -31,7 +31,7 @@ Changes to Blender
 - Animation: When scaling keyframes, merge (by-averaging) selected keys that end up on the same frame
   :rev:`Bac717928ad027b3a048e6aba7e4f64e4a617d8cc`
 
-.. rubric blender2.8
+.. rubric:: blender2.8
 
 - WorkSpace: show/hide opt-out support for add-ons
   :rev:`B61c8ed40f5df897da212b55dadeee252c8d3997b`

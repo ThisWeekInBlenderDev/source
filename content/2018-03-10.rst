@@ -1,0 +1,74 @@
+
+***********************
+2018-03-10: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-03-10
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 7c466e16992849c7b2906459f4e00fe091d39430..23ccf5767fea1d7f1b50405334249b1a7a69d5c9 (master)
+.. SHA1 range: 2adece9fbb60227fc326926a7fa52aba02c5a56e..f3161bd2abe4bcc41f0e9169275be315ecc6b054 (blender2.8)
+.. DIFF range: 3094..3098
+.. TASK range: 54222..54365
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: add roughness baking support, using squared roughness convention
+  :rev:`B23ccf5767fea1d7f1b50405334249b1a7a69d5c9`
+- Cycles: switch to squared roughness convention for all nodes
+  :rev:`B7613ffc944ebc133f1f906ea737ab55718434cc4`
+- Cycles: support arbitrary number of motion blur steps for cameras
+  :rev:`B78c2063685cb6e0d0bcb895cf4eb70686455d596`
+  :rev:`Bdb333d9ea4881d9f48e3cc4b1ec59b4dafb27cc0`
+- :task:`54233`: NLA "Push Down" discards Blend Mode, Extrapolation, and Influence
+  :rev:`B7e2100e49914e5d32973b3d28134340e0404f1bf`
+
+.. rubric:: blender2.8
+
+- Eevee: Planar Reflection: Add refraction support for reflected objects
+  :rev:`B92c2e2f38655b282b04d96204b9942ff1e505590`
+- Eevee: Probes: Add culling for planar probes
+  :rev:`B13b99b7bbba02374849d296e685238d64ff289db`
+- Eevee: Render: Add progress
+  :rev:`B872df463f62d55911a2a732775a8de434c281b2d`
+- Draw Manager: Simplify the algorithm that extract the BoundingSphere of a Frustum
+  :rev:`B267e816b9a603026d951f8e8e318ceaed04ca944`
+- DRW: Shader Deferred compilation: Use a wmJob for threading
+  :rev:`B94fadd00d889254ea59ca97c85a32ca76b9e95ca`
+- DRW: Deferred compilation initial implementation
+  :rev:`B3a209c285754a08339c654d075b5d273fa264c08`
+- Eevee: Optimize shadows drawing
+  :rev:`Bdd611dd0b87a36ffafb04177ec923e3b6d76bf71`
+
+
+New Patches
+===========
+
+- Eevee: Optimize shadows drawing
+  :diff:`3095`
+- Optional parameters for ``play_rendered_anim`` operator
+  :diff:`3097`
+- Fix :task:`53971` Render Result showing the wrong renderlayer in image editor
+  :diff:`3098`
+
+
+Other Projects
+==============
+
+- Multi-object edit mode support (design overview)
+  :task:`54242`
+- 2.79b release, proposed fixes
+  :task:`54255`
+- Python API for Blender's internal image functions
+  :task:`54272`
+
+Documentation
+=============
+
+- None
