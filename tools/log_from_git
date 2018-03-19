@@ -53,8 +53,6 @@ def rst_write_commit(
     info = []
     if use_author:
         info.append(c.author)
-        # only for context
-        fw('\n.. ' + c.author + '\n\n')
     if use_date:
         # only for context: YYYY-MM-DD (Day's Name)
         info.append(c.date.strftime('%Y-%m-%d (%a)'))
