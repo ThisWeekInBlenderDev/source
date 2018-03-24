@@ -1,0 +1,51 @@
+
+***********************
+2018-03-24: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-03-17
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 07c90f3a73f4826600f45847a43d0c61279020ec..977a4e7f5d001e62a9e09dd3a02dc2cb2329f893 (master)
+.. SHA1 range: 4a3d94c0734d1475aa9a2fbe89039fbc59c9fb8d..0c753c1dc4ad2085fbdb9ea5fdc2a31d44d126e9 (blender2.8)
+.. DIFF range: 3108..3114
+.. TASK range: 54365..54412
+
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- UI: Optional prompt to quit for non win32 systems
+  :rev:`B5ba5254ec1ebba6c1e89b663592d716b92e13165`
+- UI: 4-column layout for the editor-type selector menu
+  :rev:`B60712d12eb89fe85204f9a0dbc86e361b8ad6c58`
+
+
+New Patches
+===========
+
+- Add Ctrl+Click Extrude function for Surfaces
+  :diff:`3110`
+- Move STL import/export to C++ (great speedup)
+  :diff:`3114`
+
+
+Other Projects
+==============
+
+- Blender Interactive Mode Outline
+  :task:`54389`
+- 2.8: Code-Quest (Topics we plan to cover)
+  :task:`54387`
+- `devtalk.blender.org <https://devtalk.blender.org/>__. -- Devtalk is a new forum
+  website to help new developers get into Blender development 
+
+Documentation
+=============
+
+- None
