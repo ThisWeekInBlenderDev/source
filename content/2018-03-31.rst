@@ -1,0 +1,59 @@
+
+***********************
+2018-03-31: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-03-31
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 977a4e7f5d001e62a9e09dd3a02dc2cb2329f893..651b8fb14eb6ee5cbfa98bffe80a966a0753b14e (master)
+.. SHA1 range: 0c753c1dc4ad2085fbdb9ea5fdc2a31d44d126e9..916c91bd08933d596eaca3e369467daf7964612e (blender2.8)
+.. DIFF range: 3114..3120
+.. TASK range: 54412..54479
+
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Cycles: take into account diffuse roughness for roughness baking
+  :rev:`Be3f1d980982b1c0da7853a960cbd3e9a3f434376`
+- UI: Edit mode move edge data tool into a menu
+  :rev:`B354dfdac8824baffa46080f3552ae255451b2d40`
+- New C logging system
+  :rev:`B891c1cfc9a355171215821fc91b694273503f139`
+- Undo: unified undo system w/ linear history
+  :rev:`B651b8fb14eb6ee5cbfa98bffe80a966a0753b14e`
+
+.. rubric:: blender2.8
+
+- Collections: New *Move to Collection* operator
+  :rev:`Bf167226b793e5dd39816f0b250771177d088dc54`
+- Collections: Move to Collection: Add option to add to a new collection.
+  :rev:`B6456d59b6beaf6131366b87aacfb3ee47e42211d`
+- Collections: Add support for *Select Group*
+  :rev:`B534916258d619554106f5e8fd6bb62558e8980bc`
+
+
+New Patches
+===========
+
+- UI: use new confirm quit dialog on all platforms.
+  :diff:`3118`
+
+Other Projects
+==============
+
+- 2.8: Code-Quest (Topics we plan to cover)
+  :task:`54387`
+- `devtalk.blender.org <https://devtalk.blender.org/>__. -- Devtalk is a new forum
+  website to help new developers get into Blender development 
+
+Documentation
+=============
+
+- `Code Quest Status Update <https://code.blender.org/2018/03/code-quest-status-update/>`__
