@@ -50,7 +50,7 @@ Other Projects
 
 - 2.8: Code-Quest (Topics we plan to cover)
   :task:`54387`
-- `devtalk.blender.org <https://devtalk.blender.org/>__. -- Devtalk is a new forum
+- `devtalk.blender.org <https://devtalk.blender.org/>`__. -- Devtalk is a new forum
   website to help new developers get into Blender development 
 
 Documentation
