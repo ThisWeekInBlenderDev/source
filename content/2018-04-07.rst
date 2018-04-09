@@ -1,0 +1,68 @@
+
+***********************
+2018-04-07: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-04-07
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 651b8fb14eb6ee5cbfa98bffe80a966a0753b14e..77e9193c23176a8143c1a01434b57594e0b0a8f4 (master)
+.. SHA1 range: 916c91bd08933d596eaca3e369467daf7964612e..8d9a5d5062498797572a4d4ccdfd079947d8d148 (blender2.8)
+.. DIFF range: 3120..3140
+.. TASK range: 54479..54555
+
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- PyAPI: Add PyC_Tuple_Pack_F64 utility
+  :rev:`B31f2a6755db5bf9439e51701eddcadfca773459a`
+- New utility to fix broken utf8 strings in old .blend files.
+  :rev:`B96f565b380a8552e91151b9879746a1992283a35`
+- Write the scene render frame range to image/video files
+  :rev:`B6c3110a66122f33a3c4df3066c42374660dad067`
+- Added support for the WEBM/VP9 video codec
+  :rev:`B7e39d151d850590fbabc9870bc5134d9421c5c2c`
+- Use the newer version of the bullet 6dof spring constraint for rigidbody.
+  :rev:`B26a283deae7a3b78a197d4bcf4bfd288c598aedc`
+
+.. rubric:: blender2.8
+
+- Collections: Move to Collection: Popup for naming new collection
+  :rev:`B0faa065ed4aaa87e53bb574d950ebf8ac0cfd4a3`
+- Workspaces: Remove workspace object mode
+  :rev:`B1c24c04e6023f2d2a328dfcdc9f86cd381d029a3`
+
+.. rubric:: greasepencil-object
+
+- Add Lock to Focal Plane to Blur VFX
+  :rev:`Be32c22d3a47da2e690f2b0616cbeed130db4c460`
+- New Line Primitive
+  :rev:`B23c5eee284261368c4cb7875ec9ce2ca81a4a3e4`
+
+
+New Patches
+===========
+
+- Python ImBuf API
+  :diff:`3122`
+- Add an option to do keyframe insertion in a cycle-aware fashion.
+  :diff:`3140`
+
+Other Projects
+==============
+
+- 2.8: Code-Quest (Topics we plan to cover)
+  :task:`54387`
+- `devtalk.blender.org <https://devtalk.blender.org/>`__. -- Devtalk is a new forum
+  website to help new developers get into Blender development 
+
+Documentation
+=============
+
+- `Code Quest Status Update <https://code.blender.org/2018/03/code-quest-status-update/>`__
