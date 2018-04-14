@@ -1,0 +1,50 @@
+
+***********************
+2018-04-14: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-04-14
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 77e9193c23176a8143c1a01434b57594e0b0a8f4..66d4e9300bd8b4be4f1d759146a92df7fd3230a1 (master)
+.. SHA1 range: 8d9a5d5062498797572a4d4ccdfd079947d8d148..94959dba1b53640e2a36cf9b5ca46aaf49c5c74a (blender2.8)
+.. DIFF range: 3140..3148
+.. TASK range: 54555..54601
+
+
+Changes to Blender
+==================
+
+.. note::
+
+   Due to the code quest much of this week was spent planning and doing smaller internal changes.
+
+.. rubric:: blender2.8
+
+- BGL: Expose OpenGL API for FrameBuffers and RenderBuffers
+  :rev:`Bb107e77e46c17693a07c31cf1a678b3a3d914672`
+
+
+New Patches
+===========
+
+- None
+
+
+Other Projects
+==============
+
+- 2.8: Code-Quest (Topics we plan to cover)
+  :task:`54387`
+- `devtalk.blender.org <https://devtalk.blender.org/>`__. -- Devtalk is a new forum
+  website to help new developers get into Blender development 
+- :task:`Workbench render engine <54592>`
+
+
+Documentation
+=============
+
+- `Code Quest Kick-off <https://code.blender.org/2018/04/code-quest-kick-off/>`__
