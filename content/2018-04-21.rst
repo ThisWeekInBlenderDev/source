@@ -1,0 +1,85 @@
+
+***********************
+2018-04-14: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-04-14
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 66d4e9300bd8b4be4f1d759146a92df7fd3230a1..46a9038f60da4449d58075c4bbeb26b4b3982c55 (master)
+.. SHA1 range: 94959dba1b53640e2a36cf9b5ca46aaf49c5c74a..ba711847554f6125ba75c7faf3bd876164f1edce (blender2.8)
+.. DIFF range: 3148..
+.. TASK range: 54601..
+
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+- Particles: Interpolate size for interpolated children
+  :rev:`B0afe1032695f427c2b1358981eb493370e2f63fd`
+- Particles: Port particle instance modifier changes from Gooseberry branch
+  :rev:`B63225d7c8b3a45e8189476d537585b011993fb17`
+
+.. rubric:: blender2.8
+
+- Multi-Object Editing: Intitial support but many operators still have to be slowly ported over.
+  :rev:`Bbfc9d426bb95e2bc0dd4541d6b4c5f802909149c`
+- Remove the Blender Game Engine
+  :rev:`B159806140fd33e6ddab951c0f6f180cfbf927d38`
+- Static Overrides: Add overridable control to 'edit' feature of custom props
+  :rev:`B49f7ca3b9dd0601d622aab510975472a691e2745`
+- Workspaces: remove workspace engine, use 3D viewport draw mode instead
+  :rev:`Bf9cf2e2f6cc779764f46dae7ceadc4bb2e9ddcb5`
+- Workbench: Option to use Object color
+  :rev:`B16fac020e07d7ad0caa5901c0740c88e9772194f`
+- Workbench: Diffuse studio lighting
+  :rev:`Ba305652d87b7d14562e8e22aefe9073f34d2f06e`
+- Remove Blender Internal and legacy viewport from Blender 2.8
+  :rev:`B51b796ff1528c52cc8b4079fab1003671652a4d9`
+- Remove Armature Sketching & Retarget
+  :rev:`B36773e35f6009693562330137435271922758b95`
+- Static overrides: optimization 30% quicker
+  :rev:`B89bdc208d146eaf08f90c3dec2eb92f66b933d00`
+- UI: Python API defining dynamic icons
+  :rev:`B8ec25e5dccd21e25ea11336b88e14306ed2f77a0`
+- UI: New Global Top-Bar
+  :rev:`B5f6c45498c92b91a710a1317f6d41f73fbe83477`
+- Eevee: TAA Reprojection: Add layer property
+  :rev:`Bbe307d6032f390cd71bcbb92402c1929a085db1f`
+- Eevee: Add Velocity pass
+  :rev:`Be2613e4051d501c8b553d781cb63d06735968f91`
+- Eevee: TAA Reprojection: Initial implementation
+  :rev:`B73d2e6f2021e649a1bf8952c37ce870562a884e4`
+- Dopesheet-Timeline: First steps towards making the Timeline a mode of the DopeSheet Editor
+  :rev:`Bcc06e0fbe8bf122a7f1688342f9e80df3be8502f`
+- Dopesheet-Timeline: Removal of Timeline Editor!
+  :rev:`B5374865523faf253a524a002ebcbefe05172fd8d`
+
+
+New Patches
+===========
+
+- Preserve F-Curve shape with manual handles when inserting keyframe
+  :diff:`3172`
+- Cycles: Implement disk and ellipse shapes for area lamps
+  :diff:`3171`
+- VSE: Remove Add, Sub, Mul effects
+  :diff:`3163`
+
+Other Projects
+==============
+
+- `Blender Code quest tasks <https://developer.blender.org/project/profile/80/>`__
+- `devtalk.blender.org <https://devtalk.blender.org/>`__. -- Devtalk is a new forum
+  website to help new developers get into Blender development 
+
+
+Documentation
+=============
+
+Subscribe to `BlenderCoders <https://www.youtube.com/user/BlenderCoders>`__ on Youtube for updates on the Code Quest.
