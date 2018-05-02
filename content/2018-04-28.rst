@@ -1,0 +1,61 @@
+
+***********************
+2018-04-28: Weekly News
+***********************
+
+.. feed-entry::
+   :date: 2018-04-28
+   :hide:
+
+.. include:: /include_intro.rst
+
+.. SHA1 range: 46a9038f60da4449d58075c4bbeb26b4b3982c55..60f4cb24da7462766ea73318f1ff446d803f6319 (master)
+.. SHA1 range: ba711847554f6125ba75c7faf3bd876164f1edce..b5d3fcc9f5c80c459cce2b895f3d6091a59d0571 (blender2.8)
+.. DIFF range: 3148..3196
+.. TASK range: 54601..54928
+
+
+Changes to Blender
+==================
+
+.. rubric:: master
+
+.. rubric:: blender2.8
+
+This week was spent revampign the UI here is a small list of some of the major changes:
+
+- UI: Initial popover support for panels
+  :rev:`Be6d1fb87c6b0184416ce202ccba6a96a3ee04552`
+- EEVEE: LightProbe: Implement Visibility Group
+  :rev:`B15bfa175f849d2ca97b6680046db8b52fc0df4b7`
+- UI: new icons from @billreynish
+  :rev:`Bdb68166ed82b51e7d437778dcdb4b6fbe09f5cd9`
+- Silhouette Overlap Overlay
+  :rev:`B35220ccde0cf77ee11f01ebd2c3d7b3f60d72903`
+- WM: new offscreen window draw method to replace all existing methods.
+  :rev:`Be01cadd657c76267266546781703df107c55f83a`
+- UI: support for tool settings in the top-bar
+  :rev:`B85ea14df2f88448472443ab9f4ed3db52ce3c1d8`
+- UI: multi-column toolbar support
+  :rev:`Beb4c60124cc2b3aeba5eeb3090bea92543f066a9`
+- UI: add new transform tool that enables all widgets
+  :rev:`Bc42a47d177e97e8f799f880a2f364b0f44389a32`
+
+New Patches
+===========
+
+- Blender 2.8 Eevee NPR Proposal -- Add SeparateBSDF node and CombineBSDF node
+  :diff:`3190`
+
+Other Projects
+==============
+
+- `Blender Code quest tasks <https://developer.blender.org/project/profile/80/>`__
+- `devtalk.blender.org <https://devtalk.blender.org/>`__. -- Devtalk is a new forum
+  website to help new developers get into Blender development 
+
+
+Documentation
+=============
+
+Subscribe to `BlenderCoders <https://www.youtube.com/user/BlenderCoders>`__ on Youtube for updates on the Code Quest.
