@@ -65,7 +65,8 @@ def rst_write_commit(
         info.append(c.date.strftime('%Y-%m-%d (%a)'))
 
     if info:
-        fw('\n.. ' + ' '.join(info) + '\n\n')
+        # Indent so it's easier to jump between blocks (depending on editor features).
+        fw('\n  .. ' + ' '.join(info) + '\n\n')
 
 
 def argparse_create():
