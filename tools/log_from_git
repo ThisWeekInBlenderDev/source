@@ -111,6 +111,12 @@ def argparse_create():
         required=False,
         help='Ignore cleanup & refactor commits',
     )
+    parser.add_argument(
+        '--quiet', dest='quiet',
+        action='store_true',
+        required=False,
+        help='Do no print any information.',
+    )
     return parser
 
 
@@ -120,9 +126,11 @@ def rst_write_log(
         range_sha1=None,
         author=None,
         ignore_cleanup=False,
+        quiet=False,
         extra_args=(),
 ):
-    print('{} ...'.format(output))
+    if not quiet:
+        print('{} ...'.format(output))
     with open(output, 'w', encoding='utf-8') as fh:
         fw = fh.write
         if range_sha1 and (',' in range_sha1):
@@ -166,7 +174,8 @@ def rst_write_log_by_weeks(
             if fh is not None:
                 fh.close()
             fh = open(week_text + '.rst', 'w', encoding='utf-8')
-            print('{}.rst ...'.format(week_text))
+            if not quiet:
+                print('{}.rst ...'.format(week_text))
             fw = fh.write
 
             title = 'Week {}'.format(week_text)
@@ -193,6 +202,7 @@ def main():
             range_sha1=args.range_sha1,
             author=args.author,
             ignore_cleanup=args.ignore_cleanup,
+            quiet=args.quiet,
             extra_args=extra_args,
         )
     else:
