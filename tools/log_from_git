@@ -156,8 +156,6 @@ def rst_write_log_by_weeks(
         ignore_cleanup=False,
         extra_args=(),
 ):
-    from datetime import timedelta
-
     weeks_written_max = 3
     weeks_written = 0
 
