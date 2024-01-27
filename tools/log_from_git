@@ -39,7 +39,7 @@ def ignore_cleanup_commit(c):
 
 
 def rst_write_commit(
-        fw, c, *,
+        fw, c, rev_prefix, *,
         use_author=False,
         use_date=False,
 ):
@@ -49,7 +49,7 @@ def rst_write_commit(
     subject = plain_text_to_rst(subject)
     body = plain_text_to_rst(body)
     fw('- {}\n'.format(subject.rstrip('.:')))
-    fw('  :rev:`B{}`\n'.format(c.sha1.decode('ASCII')))
+    fw('  :rev:`{:s}{}`\n'.format(rev_prefix, c.sha1.decode('ASCII')))
 
     body = body.strip('\n')
     if body:
@@ -118,11 +118,19 @@ def argparse_create():
         required=False,
         help='Do no print any information.',
     )
+    parser.add_argument(
+        '--rev-prefix', dest='rev_prefix',
+        metavar='REV_PREFIX',
+        default='B',
+        type=str,
+        required=False,
+        help='The prefix to use for the SHA1',
+    )
     return parser
 
 
 def rst_write_log(
-        source_dir, *,
+        source_dir, rev_prefix, *,
         output=None,
         range_sha1=None,
         author=None,
@@ -147,11 +155,11 @@ def rst_write_log(
             if ignore_cleanup and ignore_cleanup_commit(c):
                 continue
             if author is None or author == c.author:
-                rst_write_commit(fw, c, use_author=author is None, use_date=True)
+                rst_write_commit(fw, c, rev_prefix, use_author=author is None, use_date=True)
 
 
 def rst_write_log_by_weeks(
-        source_dir, *,
+        source_dir, rev_prefix, *,
         range_sha1=None,
         ignore_cleanup=False,
         extra_args=(),
@@ -184,7 +192,7 @@ def rst_write_log_by_weeks(
 
         if ignore_cleanup and ignore_cleanup_commit(c):
             continue
-        rst_write_commit(fw, c, use_author=True, use_date=True)
+        rst_write_commit(fw, c, rev_prefix, use_author=True, use_date=True)
 
 
 def main():
@@ -197,6 +205,7 @@ def main():
         # for now write a single log for the author
         rst_write_log(
             args.source_dir,
+            args.rev_prefix,
             output=args.output or 'log.rst',
             range_sha1=args.range_sha1,
             author=args.author,
@@ -208,6 +217,7 @@ def main():
         # otherwise split by weeks (default)
         rst_write_log_by_weeks(
             args.source_dir,
+            args.rev_prefix,
             range_sha1=args.range_sha1,
             ignore_cleanup=args.ignore_cleanup,
             extra_args=extra_args,
